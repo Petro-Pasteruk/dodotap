@@ -3217,12 +3217,14 @@ html {
     left: -95px;
     top: 50%;
     transform: translateY(-50%);
-    z-index: -1;
+    z-index: 1;
 }
 
 .services-intro__level {
     display: flex;
     align-items: center;
+    position: relative;
+    z-index: 2;
 }
 
 .services-intro__level-number {
@@ -6248,6 +6250,9 @@ html {
     .case-web-intro__tasks-title {
         margin-bottom: 7px;
     }
+    .services-intro > .container {
+        padding-top: 150px;
+    }
 }
 
 @media (max-width: 768px) {
@@ -7230,6 +7235,20 @@ html {
         left: -10px;
         bottom: -110%;
     }
+    .section-name {
+        font-size: 12px;
+        margin-bottom: 20px;
+    }
+    .section-name:after {
+        width: 37px;
+        height: 37px;
+        right: -15px;
+    }
+    .services-intro__title {
+        font-size: 22px;
+        line-height: 28px;
+        color: #000;
+    }
 }
 
 @media (max-width: 570px) {
@@ -7286,7 +7305,7 @@ html {
     }
     .services-intro > .container {
         padding-top: 150px;
-        padding-bottom: 80px;
+        padding-bottom: 100px;
     }
     .services-intro {
         height: initial;
@@ -7342,6 +7361,15 @@ html {
     .our-team__people {
         width: 175px;
         height: 175px;
+    }
+    .services-intro__header {
+        margin-bottom: 90px;
+    }
+    .services-intro__level-content.small {
+        max-width: 135px
+    }
+    .services-intro__level-content.big {
+        max-width: 149px;
     }
 }
 

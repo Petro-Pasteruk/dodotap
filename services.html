@@ -12,6 +12,11 @@
     <link rel="stylesheet" href="css/animations.css">
     <link rel="stylesheet" href="css/styles.css">
 </head>
+<style>
+    :root {
+        --url-bg-intro-mobile: url("../images/services-intro_bg.jpg");
+    }
+</style>
 <body>
 
 <div id="wrapper">
@@ -70,8 +75,14 @@
     </div>
     <main>
         <article class="services-intro intro">
-            <video autoplay muted loop class="intro-bg">
+            <video autoplay muted loop class="intro-bg large-screen">
+                <source src="video/services-page_bg-2560.webm" type="video/webm">
+            </video>
+            <video autoplay muted loop class="intro-bg middle-screen">
                 <source src="video/services-page_bg-1440.webm" type="video/webm">
+            </video>
+            <video autoplay muted loop class="intro-bg small-screen">
+                <source src="video/services-page_bg-768.webm" type="video/webm">
             </video>
             <div class="container">
                 <div class="services-intro__header">
@@ -88,11 +99,6 @@
                     </a>
                 </div>
                 <div class="services-intro__footer">
-                    <ul class="intro__socials blue--bg">
-                        <li class="intro__social"><a href="" class="intro__link">Instagram</a></li>
-                        <li class="intro__social"><a href="" class="intro__link">Behance</a></li>
-                        <li class="intro__social"><a href="" class="intro__link">Linkedin</a></li>
-                    </ul>
                     <ul class="services-intro__levels">
                         <li class="services-intro__level">
                             <span class="services-intro__level-number">16</span>

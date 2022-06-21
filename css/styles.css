@@ -3322,6 +3322,10 @@ html {
     opacity: 1;
 }
 
+.cases__link.cases__link--mobile {
+    display: none;
+}
+
 .cases__desc {
     font-weight: 400;
     font-size: 16px;
@@ -5701,6 +5705,25 @@ html {
     .contacts__info .footer__email {
         font-size: 38px;
     }
+    .cases__case-wrap {
+        padding: 60px 20px 0;
+    }
+    .cases__case:nth-of-type(3) .cases__img {
+        width: 82%;
+    }
+    .cases__case:nth-of-type(2) .cases__img {
+        width: 87%;
+    }
+    .cases__case:nth-of-type(1) .cases__img {
+        width: 75%;
+    }
+    .cases__images.two-image .cases__img:nth-of-type(2) {
+        width: 47%;
+        left: 10px;
+    }
+    .cases__case-wrap {
+        height: 700px;
+    }
 }
 
 @media (max-width: 1200px) {
@@ -5740,6 +5763,9 @@ html {
 @media (max-width: 1095px) {
     .contacts__info .footer__email {
         font-size: 32px;
+    }
+    .cases__case-wrap {
+        height: 600px;
     }
 }
 
@@ -6063,6 +6089,77 @@ html {
         margin-bottom: 10px;
         font-size: 18px;
     }
+    .cases__list {
+        flex-direction: column;
+    }
+    .cases__case {
+        width: 100%;
+    }
+    .cases__link {
+        display: none;
+    }
+    .cases__link.cases__link--mobile {
+        display: flex;
+        width: 52px;
+    }
+    .cases__case-wrap {
+        height: 370px;
+        align-items: flex-start;
+        padding-right: 265px;
+    }
+    .cases__desc {
+        margin-bottom: 30px;
+    }
+    .cases__wrapper-link {
+        width: 100%;
+    }
+    .cases__heading, .cases__desc, .cases__wrapper-link {
+        max-width: 406px;
+    }
+    .cases__img {
+        left: auto;
+        right: 0;
+        transform: translate(0);
+    }
+    .cases__case:nth-of-type(2) .cases__img {
+        width: 230px;
+        bottom: 0;
+    }
+    .cases__case:nth-of-type(1) .cases__img {
+        width: 249px;
+        bottom: -170px;
+        right: 16px;
+    }
+    .cases__images.two-image .cases__img:nth-of-type(2) {
+        width: 132px;
+        left: auto;
+        right: 199px;
+    }
+    .cases__case:nth-of-type(3) .cases__img {
+        width: 250px;
+        right: 16px;
+    }
+    .cases__case:hover .cases__images.two-image .cases__img:nth-of-type(1), 
+    .cases__case:hover .cases__images.two-image .cases__img:nth-of-type(2), 
+    .cases__case:nth-of-type(2):hover .cases__img, 
+    .cases__case:nth-of-type(1):hover .cases__img {
+        transform: none;
+    }
+    .cases__case:nth-child(2) .cases__heading, 
+    .cases__case:nth-child(2) .cases__desc, 
+    .cases__case:nth-child(2) .cases__wrapper-link {
+        margin-left: auto;
+        margin-right: 0;
+    }
+    .cases__case:nth-child(2) .cases__img {
+        left: 16px;
+    }
+    .cases__case:nth-child(2) .cases__case-wrap {
+        align-items: flex-end;
+        padding-left: 265px;
+        padding-right: 16px;
+    }
+    
 }
 
 @media (max-width: 830px) {
@@ -7249,6 +7346,27 @@ html {
         line-height: 28px;
         color: #000;
     }
+    .cases__case-wrap {
+        height: 375px;
+        padding-top: 0;
+        justify-content: center;
+        padding-right: 243px;
+    }
+    .cases__case:nth-of-type(1) .cases__img {
+        width: 180px;
+        bottom: -30px;
+    }
+    .cases__desc {
+        font-size: 13px;
+    }
+    .cases__case:nth-of-type(3) .cases__img {
+        width: 222px;
+        right: 16px;
+    }
+    .cases__images.two-image .cases__img:nth-of-type(2) {
+        width: 71px;
+        bottom: -41px;
+    }
 }
 
 @media (max-width: 570px) {
@@ -7558,6 +7676,25 @@ html {
     }
     .portfolio__list:nth-of-type(2) .portfolio__item {
         height: 630px;
+    }
+    .cases__case-wrap {
+        padding-right: 119px;
+    }
+    .cases__case:nth-of-type(3) .cases__img {
+        right: -106px;
+    }
+    .cases__images.two-image .cases__img:nth-of-type(2) {
+        width: 87px;
+        right: 72px;
+    }
+    .cases__case:nth-of-type(1) .cases__img {
+        right: -64px;
+    }
+    .cases__case:nth-child(2) .cases__case-wrap {
+        padding-left: 135px;
+    }
+    .cases__case:nth-child(2) .cases__img {
+        left: -111px;
     }
 }
 

@@ -1,0 +1,82 @@
+@keyframes moveIntroImages {
+    0% {
+        transform: rotate(-14deg) translateY(0);
+        opacity: 1;
+    }
+    100% {
+        transform: rotate(-14deg) translateY(-68.5%);
+        opacity: 1;
+    }
+}
+@keyframes moveIntroImagesTwo {
+    0% {
+        transform: rotate(-14deg) translateY(0);
+        opacity: 1;
+    }
+    100% {
+        transform: rotate(-14deg) translateY(-72%);
+        opacity: 1;
+    }
+}
+
+@keyframes moveCaseImages {
+    0% {
+        opacity: 1;
+        transform: rotate(-22deg) translateY(0);
+    }
+    100% {
+        opacity: 1;
+        transform: rotate(-22deg) translateY(-61.5%);
+    }
+}
+
+
+@keyframes moveCaseImagesWeb {
+    0% {
+        opacity: 1;
+        transform: rotate(-22deg) translateY(0);
+    }
+    100% {
+        opacity: 1;
+        transform: rotate(-22deg) translateY(-50.5%);
+    }
+}
+
+@keyframes movePeople {
+    0% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-35px);
+    }
+    100% {
+        transform: translateY(0);
+    }
+}
+
+@keyframes scrollText {
+    from {
+        transform: translateX(100%);
+    }
+    to {
+        transform: translateX(-100%);
+    }
+}
+
+@keyframes scrollTextReverse {
+    from {
+        transform: translateX(-100%);
+    }
+    to {
+        transform: translateX(100%);
+    }
+}
+
+@keyframes notFoundRotating {
+    from {
+        transform: translate(-50%, -50%) rotate(0deg);
+    }
+    to {
+        transform: translate(-50%, -50%) rotate(360deg);
+    }
+}

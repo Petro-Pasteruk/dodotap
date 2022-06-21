@@ -1,0 +1,145 @@
+.not-found {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    height: 100vh;
+    padding-top: 74px;
+    background: url("../images/404-bg.jpg") no-repeat center center;
+    background-size: cover;
+}
+
+.not-found__wrapper {
+    width: 446px;
+    height: 446px;
+    position: relative;
+    margin-bottom: 50px;
+}
+
+.not-found__text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 555px;
+    height: 555px;
+    animation: notFoundRotating 15s linear infinite;
+}
+
+.not-found__content {
+    width: 446px;
+    height: 446px;
+    border-radius: 50%;
+    background: linear-gradient(120.29deg, rgba(210, 234, 255, 0.2) 1.49%, rgba(255, 255, 255, 0.2) 96.72%);
+    box-shadow: 0 10px 40px rgba(96, 117, 158, 0.15);
+    border: 1px solid #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.not-found__img {
+    margin-bottom: 8px;
+    max-width: 128px;
+}
+
+.not-found__title {
+    margin-bottom: 5px;
+}
+
+.not-found__desc {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    max-width: 310px;
+    color: #231E57;
+    opacity: 0.8;
+}
+
+.not-found__btn {
+    opacity: 1;
+}
+
+@media (max-height: 690px) {
+    .not-found__wrapper {
+        margin-bottom: 30px;
+    }
+    .not-found__content,
+    .not-found__wrapper {
+        width: 400px;
+        height: 400px;
+    }
+    .not-found__text {
+        width: 509px;
+        height: 509px;
+    }
+}
+
+@media (max-height: 600px) {
+    .not-found__content,
+    .not-found__wrapper {
+        width: 340px;
+        height: 340px;
+    }
+    .not-found__text {
+        width: 420px;
+        height: 420px;
+    }
+}
+
+@media (max-width: 685px) {
+    .not-found__content,
+    .not-found__wrapper {
+        width: 400px;
+        height: 400px;
+    }
+    .not-found__text {
+        width: 509px;
+        height: 509px;
+    }
+    .not-found__desc {
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 485px) {
+    .not-found__content,
+    .not-found__wrapper {
+        width: 340px;
+        height: 340px;
+    }
+    .not-found__text {
+        width: 420px;
+        height: 420px;
+    }
+    .not-found__desc {
+        font-size: 14px;
+        max-width: 70%;
+    }
+}
+
+@media (max-width: 420px) {
+    .not-found__content,
+    .not-found__wrapper {
+        width: 250px;
+        height: 250px;
+    }
+    .not-found__text {
+        width: 320px;
+        height: 320px;
+    }
+    .not-found__img {
+        max-width: 90px;
+    }
+    .footer__submit {
+        width: 230px;
+        background: #0669F7;
+        border-radius: 16px;
+    }
+    .not-found__desc {
+        line-height: 16px;
+        font-size: 12px;
+        max-width: 65%;
+    }
+}

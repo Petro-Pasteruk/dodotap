@@ -1,0 +1,856 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Dodo tap</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,400&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/css/select2.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="css/animations.css">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<style>
+    :root {
+        --url-bg-intro-mobile: url("../images/company_intro-bg.jpg");
+    }
+</style>
+<body>
+
+<div id="wrapper">
+    <header id="header" class="header container">
+        <a href="" class="header__logo logo blue">Dodotap.</a>
+        <div class="header__controls">
+            <a href="mailto:hello@dodotap.com" class="header__btn header__email">hello@dodotap.com</a>
+            <button class="header__burger"></button>
+        </div>
+    </header>
+    <div class="main-menu__wrapper" id="main-menu">
+        <nav class="main-menu">
+            <div class="container">
+                <div class="main-menu__heading">
+                    <a href="" class="main-menu__logo logo white">Dodotap.</a>
+                    <div class="main-menu__controls">
+                        <ul class="main-menu__languages">
+                            <li class="main-menu__slider"></li>
+                            <li class="main-menu__language"><a href="">EN</a></li>
+                            <li class="main-menu__language"><a href="">UK</a></li>
+                            <li class="main-menu__language"><a href="">RU</a></li>
+                        </ul>
+                        <a href="mailto:hello@dodotap.com" class="header__btn header__email revert">hello@dodotap.com</a>
+                        <a class="main-menu__close header__btn revert">
+                            <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M15.9544 17.5003C16.3811 17.9271 17.073 17.9271 17.4998 17.5003C17.9266 17.0735 17.9266 16.3816 17.4998 15.9548L10.5456 9.00058L17.5004 2.04574C17.9272 1.61898 17.9272 0.927051 17.5004 0.500284C17.0736 0.0735175 16.3817 0.0735188 15.9549 0.500286L9.0001 7.45512L2.04522 0.500241C1.61845 0.0734744 0.926526 0.0734743 0.499759 0.500241C0.072992 0.927008 0.0729933 1.61894 0.49976 2.0457L7.45464 9.00058L0.500342 15.9549C0.0735748 16.3816 0.0735746 17.0736 0.500341 17.5003C0.927108 17.9271 1.61904 17.9271 2.0458 17.5003L9.0001 10.546L15.9544 17.5003Z" fill="white"/>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+                <ul class="main-menu__list">
+                    <li class="main-menu__item"><a href="" class="main-menu__link">Home</a></li>
+                    <li class="main-menu__item"><a href="" class="main-menu__link">Company</a></li>
+                    <li class="main-menu__item"><a href="" class="main-menu__link">Services</a></li>
+                    <li class="main-menu__item"><a href="" class="main-menu__link">Cases</a></li>
+                    <li class="main-menu__item"><a href="" class="main-menu__link">Contact</a></li>
+                </ul>
+                <a href="" class="main-menu__btn btn--imprint main-menu__tablet">
+                    Discuss the project
+                    <span class="btn--imprint__img">
+                            <img src="images/imprint-small_no-hover.svg" alt="" class="btn--imprint__no-hover">
+                            <span class="btn--imprint__hover">
+                                <img src="images/imprint-small_hover.svg" alt="">
+                            </span>
+                        </span>
+                </a>
+                <ul class="main-menu__languages main-menu__tablet">
+                    <li class="main-menu__slider"></li>
+                    <li class="main-menu__language"><a href="">EN</a></li>
+                    <li class="main-menu__language"><a href="">UK</a></li>
+                    <li class="main-menu__language"><a href="">RU</a></li>
+                </ul>
+            </div>
+        </nav>
+        <div class="main-menu__shadow"></div>
+    </div>
+    <main>
+        <article class="company-intro intro">
+            <video autoplay muted loop class="intro-bg large-screen">
+                <source src="video/company-page_bg-2560.webm" type="video/webm">
+            </video>
+            <video autoplay muted loop class="intro-bg middle-screen">
+                <source src="video/company-page_bg-1440.webm" type="video/webm">
+            </video>
+            <video autoplay muted loop class="intro-bg small-screen">
+                <source src="video/company-page_bg-768.webm" type="video/webm">
+            </video>
+            <div class="container">
+                <div class="company-intro__heading-wrap">
+                    <ul class="company-intro__heading">
+                        <li class="company-intro__title ">We are productive</li>
+                        <li class="company-intro__title middle">We are skillful</li>
+                        <li class="company-intro__title active">We are creative</li>
+                        <li class="company-intro__title middle">We are young</li>
+                        <li class="company-intro__title">We are progresive</li>
+                    </ul>
+                </div>
+                <div class="team__people-wrap">
+                    <div class="team__people">
+                        <div class="team__people-img">
+                            <img src="images/team-pc.png" alt="" class="team__people-img-pc">
+                            <img src="images/team_people.png" alt="" class="team__people-img-people">
+                        </div>
+                        <div class="team__people-name">Maks</div>
+                        <div class="team__people-spec">CEO</div>
+                    </div>
+                </div>
+            </div>
+        </article>
+        <article class="overview">
+            <img src="images/overview_bg.png" alt="" class="overview__bg">
+            <div class="container">
+                <div class="overview__heading">
+                    <h3 class="overview__title title--white">DodoTap - overview</h3>
+                    <div class="overview__desc">Get to know the important components of our company.</div>
+                </div>
+                <ul class="overview__list">
+                    <li class="overview__item get-img">
+                        <a href="" class="overview__link">
+                            <img src="images/overview_img.png" alt="" class="overview__img">
+                            <span class="overview__caption">Our works</span>
+                            <span class="overview__description">We provide an individual approach to each product that we create.</span>
+                        </a>
+                    </li>
+                    <li class="overview__item">
+                        <a href="" class="overview__link">
+                            <span class="overview__caption">Our services</span>
+                            <span class="overview__description">Our company specializes in creating mobile and web applications. For us, a successful result is the creation of a high-quality product.</span>
+                        </a>
+                    </li>
+                    <li class="overview__item">
+                        <a href="" class="overview__link">
+                            <span class="overview__caption">Our team</span>
+                            <span class="overview__description">Thanks to a team of professionals, we provide our customers with a high level of service.</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </article>
+        <article class="our-team">
+            <div class="our-team__head">
+                <div class="container">
+                    <div class="our-team__heading">
+                        <h3 class="our-team__title title--blue">Our team</h3>
+                        <div class="our-team__desc">Meet our team, which will create a modern high-quality product for you. We combine creativity with professionalism.</div>
+                    </div>
+                    <button class="our-team__btn btn--imprint" id="join-team">
+                        Join our team
+                        <span class="btn--imprint__img">
+                            <img src="images/imprint-small_no-hover.svg" alt="" class="btn--imprint__no-hover">
+                            <span class="btn--imprint__hover">
+                                <img src="images/imprint-small_hover.svg" alt="">
+                            </span>
+                        </span>
+                    </button>
+                </div>
+            </div>
+            <div class="our-team__content">
+                <ul class="our-team__list">
+                    <li class="our-team__item">
+                        <div class="our-team__people">
+                            <div class="our-team__img-wrap">
+                                <img src="images/our-team-people_1.png" alt="" class="team__image">
+                            </div>
+                            <div class="team__name">Lisa</div>
+                            <div class="team__slide-spec">Product Manager</div>
+                        </div>
+                    </li>
+                    <li class="our-team__item dark_blue">
+                        <div class="our-team__people">
+                            <div class="our-team__img-wrap">
+                                <img src="images/our-team-people_2.png" alt="" class="team__image">
+                            </div>
+                            <div class="team__name">Zhenia</div>
+                            <div class="team__slide-spec">BackEnd Dev</div>
+                        </div>
+                    </li>
+                    <li class="our-team__item">
+                        <div class="our-team__people">
+                            <div class="our-team__img-wrap">
+                                <img src="images/our-team-people_3.png" alt="" class="team__image">
+                            </div>
+                            <div class="team__name">Joan</div>
+                            <div class="team__slide-spec">Product Manager</div>
+                        </div>
+                    </li>
+                    <li class="our-team__item dark_blue">
+                        <div class="our-team__people">
+                            <div class="our-team__img-wrap">
+                                <img src="images/our-team-people_4.png" alt="" class="team__image">
+                            </div>
+                            <div class="team__name">Sam</div>
+                            <div class="team__slide-spec">Android Dev</div>
+                        </div>
+                    </li>
+                    <li class="our-team__item big-img">
+                        <img src="images/our-team_big-img_1.png" alt="" class="our-team__img">
+                    </li>
+                    <li class="our-team__item dark_blue">
+                        <div class="our-team__people">
+                            <div class="our-team__img-wrap">
+                                <img src="images/our-team-people_5.png" alt="" class="team__image">
+                            </div>
+                            <div class="team__name">Nikita</div>
+                            <div class="team__slide-spec">IOS Dev</div>
+                        </div>
+                    </li>
+                    <li class="our-team__item">
+                        <div class="our-team__people">
+                            <div class="our-team__img-wrap">
+                                <img src="images/our-team-people_6.png" alt="" class="team__image">
+                            </div>
+                            <div class="team__name">Kate</div>
+                            <div class="team__slide-spec">Flutter Dev</div>
+                        </div>
+                    </li>
+                    <li class="our-team__item">
+                        <div class="our-team__people">
+                            <div class="our-team__img-wrap">
+                                <img src="images/our-team-people_7.png" alt="" class="team__image">
+                            </div>
+                            <div class="team__name">Daria</div>
+                            <div class="team__slide-spec">UI/UX Designer</div>
+                        </div>
+                    </li>
+                    <li class="our-team__item dark_blue">
+                        <div class="our-team__people">
+                            <div class="our-team__img-wrap">
+                                <img src="images/our-team-people_8.png" alt="" class="team__image">
+                            </div>
+                            <div class="team__name">It can be you</div>
+                            <div class="team__slide-spec">Click to fill form</div>
+                        </div>
+                    </li>
+                    <li class="our-team__item dark_blue">
+                        <div class="our-team__people">
+                            <div class="our-team__img-wrap">
+                                <img src="images/our-team-people_9.png" alt="" class="team__image">
+                            </div>
+                            <div class="team__name">Artem</div>
+                            <div class="team__slide-spec">Android Dev</div>
+                        </div>
+                    </li>
+                    <li class="our-team__item">
+                        <div class="our-team__people">
+                            <div class="our-team__img-wrap">
+                                <img src="images/our-team-people_10.png" alt="" class="team__image">
+                            </div>
+                            <div class="team__name">Nikol</div>
+                            <div class="team__slide-spec">Android Dev</div>
+                        </div>
+                    </li>
+                    <li class="our-team__item dark_blue">
+                        <div class="our-team__people">
+                            <div class="our-team__img-wrap">
+                                <img src="images/our-team-people_11.png" alt="" class="team__image">
+                            </div>
+                            <div class="team__name">Evgeniy</div>
+                            <div class="team__slide-spec">React Dev</div>
+                        </div>
+                    </li>
+                    <li class="our-team__item">
+                        <div class="our-team__people">
+                            <div class="our-team__img-wrap">
+                                <img src="images/our-team-people_12.png" alt="" class="team__image">
+                            </div>
+                            <div class="team__name">Alex</div>
+                            <div class="team__slide-spec">BackEnd Dev</div>
+                        </div>
+                    </li>
+                    <li class="our-team__item">
+                        <div class="our-team__people">
+                            <div class="our-team__img-wrap">
+                                <img src="images/our-team-people_13.png" alt="" class="team__image">
+                            </div>
+                            <div class="team__name">Vitaliy</div>
+                            <div class="team__slide-spec">React Dev</div>
+                        </div>
+                    </li>
+                    <li class="our-team__item dark_blue">
+                        <div class="our-team__people">
+                            <div class="our-team__img-wrap">
+                                <img src="images/our-team-people_14.png" alt="" class="team__image">
+                            </div>
+                            <div class="team__name">Mark</div>
+                            <div class="team__slide-spec">IOS Dev</div>
+                        </div>
+                    </li>
+                    <li class="our-team__item big-img">
+                        <img src="images/our-team_big-img_2.png" alt="" class="our-team__img">
+                    </li>
+                    <li class="our-team__item dark_blue">
+                        <div class="our-team__people">
+                            <div class="our-team__img-wrap">
+                                <img src="images/our-team-people_15.png" alt="" class="team__image">
+                            </div>
+                            <div class="team__name">It can be you</div>
+                            <div class="team__slide-spec">Click to fill form</div>
+                        </div>
+                    </li>
+                    <li class="our-team__item">
+                        <div class="our-team__people">
+                            <div class="our-team__img-wrap">
+                                <img src="images/our-team-people_16.png" alt="" class="team__image">
+                            </div>
+                            <div class="team__name">Vova</div>
+                            <div class="team__slide-spec">IOS Dev</div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <div class="our-team__content our-team__tablet">
+                <ul class="our-team__list">
+                    <li class="our-team__block">
+                        <ul class="our-team__sub-list">
+                            <li class="our-team__sub-item">
+                                <div class="our-team__sub-block">
+                                    <div class="our-team__people">
+                                        <div class="our-team__img-wrap">
+                                            <img src="images/our-team-people_1.png" alt="" class="team__image">
+                                        </div>
+                                        <div class="team__name">Lisa</div>
+                                        <div class="team__slide-spec">Product Manager</div>
+                                    </div>
+                                </div>
+                                <div class="our-team__sub-block">
+                                    <div class="our-team__people">
+                                        <div class="our-team__img-wrap">
+                                            <img src="images/our-team-people_2.png" alt="" class="team__image">
+                                        </div>
+                                        <div class="team__name">Zhenia</div>
+                                        <div class="team__slide-spec">BackEnd Dev</div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="our-team__sub-item">
+                                <div class="our-team__sub-block">
+                                    <div class="our-team__people">
+                                        <div class="our-team__img-wrap">
+                                            <img src="images/our-team-people_3.png" alt="" class="team__image">
+                                        </div>
+                                        <div class="team__name">Joan</div>
+                                        <div class="team__slide-spec">Product Manager</div>
+                                    </div>
+                                </div>
+                                <div class="our-team__sub-block">
+                                    <div class="our-team__people">
+                                        <div class="our-team__img-wrap">
+                                            <img src="images/our-team-people_4.png" alt="" class="team__image">
+                                        </div>
+                                        <div class="team__name">Sam</div>
+                                        <div class="team__slide-spec">Android Dev</div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="our-team__sub-item img">
+                                <img src="images/our-team_big-img_1.png" alt="" class="our-team__img">
+                                <button class="our-team__btn-more btn--imprint">
+                                    Show more
+                                    <span class="btn--imprint__img">
+                                        <img src="images/imprint-small_no-hover.svg" alt="" class="btn--imprint__no-hover">
+                                        <span class="btn--imprint__hover">
+                                            <img src="images/imprint-small_hover.svg" alt="">
+                                        </span>
+                                    </span>
+                                </button>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="our-team__block">
+                        <ul class="our-team__sub-list">
+                            <li class="our-team__sub-item">
+                                <div class="our-team__sub-block">
+                                    <div class="our-team__people">
+                                        <div class="our-team__img-wrap">
+                                            <img src="images/our-team-people_5.png" alt="" class="team__image">
+                                        </div>
+                                        <div class="team__name">Nikita</div>
+                                        <div class="team__slide-spec">IOS Dev</div>
+                                    </div>
+                                </div>
+                                <div class="our-team__sub-block">
+                                    <div class="our-team__people">
+                                        <div class="our-team__img-wrap">
+                                            <img src="images/our-team-people_6.png" alt="" class="team__image">
+                                        </div>
+                                        <div class="team__name">Kate</div>
+                                        <div class="team__slide-spec">Flutter Dev</div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="our-team__sub-item">
+                                <div class="our-team__sub-block">
+                                    <div class="our-team__people">
+                                        <div class="our-team__img-wrap">
+                                            <img src="images/our-team-people_7.png" alt="" class="team__image">
+                                        </div>
+                                        <div class="team__name">Daria</div>
+                                        <div class="team__slide-spec">UI/UX Designer</div>
+                                    </div>
+                                </div>
+                                <div class="our-team__sub-block">
+                                    <div class="our-team__people">
+                                        <div class="our-team__img-wrap">
+                                            <img src="images/our-team-people_8.png" alt="" class="team__image">
+                                        </div>
+                                        <div class="team__name">It can be you</div>
+                                        <div class="team__slide-spec">Click to fill form</div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="our-team__sub-item">
+                                <div class="our-team__sub-block">
+                                    <div class="our-team__people">
+                                        <div class="our-team__img-wrap">
+                                            <img src="images/our-team-people_9.png" alt="" class="team__image">
+                                        </div>
+                                        <div class="team__name">Artem</div>
+                                        <div class="team__slide-spec">Android Dev</div>
+                                    </div>
+                                </div>
+                                <div class="our-team__sub-block">
+                                    <div class="our-team__people">
+                                        <div class="our-team__img-wrap">
+                                            <img src="images/our-team-people_10.png" alt="" class="team__image">
+                                        </div>
+                                        <div class="team__name">Nikol</div>
+                                        <div class="team__slide-spec">Android Dev</div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="our-team__sub-item img">
+                                <img src="images/our-team_big-img_2.png" alt="" class="our-team__img">
+                                <button class="our-team__btn-more btn--imprint">
+                                    Show more
+                                    <span class="btn--imprint__img">
+                                        <img src="images/btn-show-more_imprimt.png" alt="" class="btn--imprint__no-hover">
+                                        <span class="btn--imprint__hover">
+                                            <img src="images/btn-show-more_imprimt.png" alt="">
+                                        </span>
+                                    </span>
+                                </button>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="our-team__block">
+                        <ul class="our-team__sub-list">
+                            <li class="our-team__sub-item">
+                                <div class="our-team__sub-block">
+                                    <div class="our-team__people">
+                                        <div class="our-team__img-wrap">
+                                            <img src="images/our-team-people_11.png" alt="" class="team__image">
+                                        </div>
+                                        <div class="team__name">Evgeniy</div>
+                                        <div class="team__slide-spec">React Dev</div>
+                                    </div>
+                                </div>
+                                <div class="our-team__sub-block">
+                                    <div class="our-team__people">
+                                        <div class="our-team__img-wrap">
+                                            <img src="images/our-team-people_12.png" alt="" class="team__image">
+                                        </div>
+                                        <div class="team__name">Alex</div>
+                                        <div class="team__slide-spec">BackEnd Dev</div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="our-team__sub-item">
+                                <div class="our-team__sub-block">
+                                    <div class="our-team__people">
+                                        <div class="our-team__img-wrap">
+                                            <img src="images/our-team-people_13.png" alt="" class="team__image">
+                                        </div>
+                                        <div class="team__name">Vitaliy</div>
+                                        <div class="team__slide-spec">React Dev</div>
+                                    </div>
+                                </div>
+                                <div class="our-team__sub-block">
+                                    <div class="our-team__people">
+                                        <div class="our-team__img-wrap">
+                                            <img src="images/our-team-people_14.png" alt="" class="team__image">
+                                        </div>
+                                        <div class="team__name">Mark</div>
+                                        <div class="team__slide-spec">IOS Dev</div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="our-team__sub-item">
+                                <div class="our-team__sub-block">
+                                    <div class="our-team__people">
+                                        <div class="our-team__img-wrap">
+                                            <img src="images/our-team-people_15.png" alt="" class="team__image">
+                                        </div>
+                                        <div class="team__name">It can be you</div>
+                                        <div class="team__slide-spec">Click to fill form</div>
+                                    </div>
+                                </div>
+                                <div class="our-team__sub-block">
+                                    <div class="our-team__people">
+                                        <div class="our-team__img-wrap">
+                                            <img src="images/our-team-people_16.png" alt="" class="team__image">
+                                        </div>
+                                        <div class="team__name">Vova</div>
+                                        <div class="team__slide-spec">IOS Dev</div>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </article>
+        <article class="our-values">
+            <div class="our-values__heading">
+                <div class="our-values__sup-title">What are we proud of</div>
+                <h3 class="our-values__title title--blue">Our values</h3>
+            </div>
+            <ul class="our-values__list">
+                <li class="our-values__item">
+                    <div class="our-values__number">1</div>
+                    <div class="our-values__caption">Clarity</div>
+                    <div class="our-values__desc">The company makes it possible to follow the development process by connecting you to various tracker systems.</div>
+                </li>
+                <li class="our-values__item no-left-bor">
+                    <div class="our-values__number">2</div>
+                    <div class="our-values__caption">Flexible</div>
+                    <div class="our-values__desc">We offer different forms of cooperation, based on the analysis of the needs of the client and his wishes.</div>
+                </li>
+                <li class="our-values__item">
+                    <div class="our-values__number">3</div>
+                    <div class="our-values__caption">Expertise</div>
+                    <div class="our-values__desc">We have studied the area of our work well and backed it up with extensive experience so that you can trust us.</div>
+                </li>
+                <li class="our-values__item no-left-bor">
+                    <div class="our-values__number">4</div>
+                    <div class="our-values__caption">Creativity</div>
+                    <div class="our-values__desc">To make the product unique, we select an individual approach to each client and request. We don't think in patterns.</div>
+                </li>
+                <li class="our-values__item">
+                    <div class="our-values__number">5</div>
+                    <div class="our-values__caption">Reliability</div>
+                    <div class="our-values__desc">Many years of experience allows us to accurately and efficiently perform all tasks. We know our job.</div>
+                </li>
+                <li class="our-values__item no-left-bor">
+                    <div class="our-values__number">6</div>
+                    <div class="our-values__caption">Innovation</div>
+                    <div class="our-values__desc">Our company keeps up with the times, so we follow all the trends and innovations in the development world.</div>
+                </li>
+                <li class="our-values__item big-width">
+                    <div class="our-values__number">7</div>
+                    <div class="our-values__caption">Friendly</div>
+                    <div class="our-values__desc">We offer our customers a healthy, friendly work environment in exchange for cold, calculating corporate relationships. Our company stands for equal and productive interactions.</div>
+                </li>
+            </ul>
+        </article>
+        <article class="contact-us">
+            <video autoplay muted loop class="contact-us__bg large-screen">
+                <source src="video/contacts-block_bg-2560.webm" type="video/webm">
+            </video>
+            <video autoplay muted loop class="contact-us__bg middle-screen">
+                <source src="video/contacts-block_bg-1440.webm" type="video/webm">
+            </video>
+            <video autoplay muted loop class="contact-us__bg small-screen">
+                <source src="video/contacts-block_bg-768.webm" type="video/webm">
+            </video>
+
+            <div class="contact-us__heading contact-us__tablet">
+                <h3 class="contact-us__caption title--blue">Contact us!</h3>
+                <div class="contact-us__description">Let's figure out how to create an effective application, its cost and development time.</div>
+            </div>
+
+            <h3 class="contact-us__title">Contact us!</h3>
+
+            <div class="contact-us__btn-wrap">
+                <button class="contact-us__btn">
+                    <img src="images/contact-us_btn-img.svg" alt="">
+                    <span>Let’s do it together</span>
+                </button>
+                <div class="contact-us__desc">
+                    <img src="images/contact-us_arrow.svg" alt="">
+                    <span>Here can be your app</span>
+                </div>
+            </div>
+        </article>
+    </main>
+</div>
+
+<footer id="footer" class="footer">
+    <div class="container footer__content">
+        <div class="footer__block">
+            <div class="footer__heading">Let`s create your app together!</div>
+            <a href="mailto:hello@dodotap.com" class="footer__email">hello@dodotap.com</a>
+            <div class="footer__phones">
+                <a href="tel:0674445566" class="footer__phone link-underline-animation">+38 (067) 444 55 66</a>
+                <a href="tel:0674445566" class="footer__phone link-underline-animation">+38 (067) 444 55 66</a>
+            </div>
+            <ul class="footer__nav">
+                <li class="footer__item"><a href="" class="footer__link link-underline-animation">Home</a></li>
+                <li class="footer__item"><a href="" class="footer__link link-underline-animation">Company</a></li>
+                <li class="footer__item"><a href="" class="footer__link link-underline-animation">Services</a></li>
+                <li class="footer__item"><a href="" class="footer__link link-underline-animation">Cases</a></li>
+                <li class="footer__item"><a href="" class="footer__link link-underline-animation">Contact</a></li>
+            </ul>
+            <ul class="main-menu__languages footer__languages">
+                <li class="main-menu__slider"></li>
+                <li class="main-menu__language"><a href="">EN</a></li>
+                <li class="main-menu__language"><a href="">UK</a></li>
+                <li class="main-menu__language"><a href="">RU</a></li>
+            </ul>
+            <ul class="intro__socials footer__socials">
+                <li class="intro__social"><a href="" class="intro__link">Instagram</a></li>
+                <li class="intro__social"><a href="" class="intro__link">Behance</a></li>
+                <li class="intro__social"><a href="" class="intro__link">Linkedin</a></li>
+            </ul>
+        </div>
+        <div class="footer__block">
+            <div class="footer__heading">Contact us</div>
+            <form action="" class="footer__contact">
+                <label for="footer-user_name" hidden></label>
+                <input type="text" class="input footer__input" id="footer-user_name" placeholder="Name">
+                <label for="footer-user_phone" hidden></label>
+                <input type="tel" class="input footer__input" id="footer-user_phone" placeholder="+380 (__) ___ __ __">
+                <label for="footer-user_email" hidden></label>
+                <input type="email" class="input footer__input" id="footer-user_email" placeholder="Email">
+                <button class="footer__submit">
+                    Discuss the project
+                    <span class="footer__submit-img">
+                        <img src="images/footer-no-hover.png" alt="">
+                        <span class="footer__submit-hover">
+                            <img src="images/footer-hover.png" alt="">
+                        </span>
+                    </span>
+                </button>
+            </form>
+            <div class="footer__copyright">
+                © 2019. All rights reserved / <a href="">Privacy policy</a>  / <a href="">Cookies policy</a>
+            </div>
+            <div class="footer__top-wrap">
+                <button class="footer__top"></button>
+            </div>
+        </div>
+    </div>
+    <div class="container footer__content footer__tablet">
+        <div class="footer__block">
+            <div class="footer__head">
+                <div class="footer__heading">Let`s create <br> your app together!</div>
+                <div class="footer__top-wrap">
+                    <button class="footer__top"></button>
+                </div>
+            </div>
+            <form action="" class="footer__contact">
+                <label for="footer-tablet-user_name" hidden></label>
+                <input type="text" class="input footer__input" id="footer-tablet-user_name" placeholder="Name">
+                <label for="footer-tablet-user_phone" hidden></label>
+                <input type="tel" class="input footer__input" id="footer-tablet-user_phone" placeholder="+380 (__) ___ __ __">
+                <label for="footer-tablet-user_email" hidden></label>
+                <input type="email" class="input footer__input" id="footer-tablet-user_email" placeholder="Email">
+                <button class="footer__submit">
+                    Discuss the project
+                    <span class="footer__submit-img">
+                        <img src="images/footer-no-hover.png" alt="">
+                        <span class="footer__submit-hover">
+                            <img src="images/footer-hover.png" alt="">
+                        </span>
+                    </span>
+                </button>
+            </form>
+        </div>
+        <div class="footer__block">
+            <div class="footer__navigation">
+                <div class="footer__navigation-block">
+                    <div class="footer__navigation-title">Menu</div>
+                    <ul class="footer__nav">
+                        <li class="footer__item"><a href="" class="footer__link link-underline-animation">Home</a></li>
+                        <li class="footer__item"><a href="" class="footer__link link-underline-animation">Company</a></li>
+                        <li class="footer__item"><a href="" class="footer__link link-underline-animation">Services</a></li>
+                        <li class="footer__item"><a href="" class="footer__link link-underline-animation">Cases</a></li>
+                        <li class="footer__item"><a href="" class="footer__link link-underline-animation">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer__navigation-block">
+                    <div class="footer__navigation-title">Contacts</div>
+                    <a href="mailto:hello@dodotap.com" class="footer__navigation-email link-underline-animation">hello@dodotap.com</a>
+                    <div class="footer__phones">
+                        <a href="tel:0674445566" class="footer__phone link-underline-animation">+38 (067) 444 55 66</a>
+                        <a href="tel:0674445566" class="footer__phone link-underline-animation">+38 (067) 444 55 66</a>
+                    </div>
+                    <ul class="intro__socials footer__socials">
+                        <li class="intro__social"><a href="" class="intro__link"><i class="fa-brands fa-instagram"></i></a></li>
+                        <li class="intro__social"><a href="" class="intro__link"><i class="fa-brands fa-linkedin"></i></a></li>
+                        <li class="intro__social"><a href="" class="intro__link"><i class="fa-brands fa-behance-square"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+            <ul class="main-menu__languages footer__languages">
+                <li class="main-menu__slider"></li>
+                <li class="main-menu__language"><a href="">EN</a></li>
+                <li class="main-menu__language"><a href="">UK</a></li>
+                <li class="main-menu__language"><a href="">RU</a></li>
+            </ul>
+            <div class="footer__copyright">
+                © 2019. All rights reserved / <a href="">Privacy policy</a>  / <a href="">Cookies policy</a>
+            </div>
+        </div>
+    </div>
+</footer>
+
+<div class="contact-modal modal">
+    <div class="contact-modal__content modal__content">
+        <div class="contact-modal__block modal__block">
+            <div class="contact-modal__heading modal__heading">
+                <h5 class="contact-modal__title modal__title">Contact us!</h5>
+                <div class="contact-modal__desc">Fill out the form and do not forget to attach your resume. We are waiting for you! We are looking for:</div>
+            </div>
+            <div class="contact-modal__info">
+                <a href="mailto:hello@dodotap.com" class="footer__email">hello@dodotap.com</a>
+                <div class="footer__phones">
+                    <a href="tel:0674445566" class="footer__phone link-underline-animation">+38 (067) 444 55 66</a>
+                    <a href="tel:0674445566" class="footer__phone link-underline-animation">+38 (067) 444 55 66</a>
+                </div>
+            </div>
+        </div>
+        <div class="contact-modal__block modal__block">
+            <form action="" class="contact-modal__form">
+                <label for="contact-user_name" hidden></label>
+                <input type="text" class="contact-modal__input modal__input input" id="contact-user_name" placeholder="Name*">
+                <div class="modal-form__control">
+                    <label for="contact-user_phone" hidden></label>
+                    <input type="tel" class="contact-modal__input modal__input input" id="contact-user_phone" placeholder="+380 (__) ___ __ __*">
+                    <label for="contact-user_email" hidden></label>
+                    <input type="email" class="contact-modal__input modal__input input" id="contact-user_email" placeholder="Email">
+                </div>
+                <label for="contact-user_message" hidden></label>
+                <input type="text" class="contact-modal__input modal__input input" id="contact-user_message" placeholder="Describe your project idea in some words">
+
+                <div class="contact-modal__radios">
+                    <label>
+                        <input type="radio" name="type" id="applications" class="contact-modal__radio" checked>
+                        <label for="applications" class="contact-modal__radios-label"></label>
+                        <span>Applications</span>
+                    </label>
+                    <label>
+                        <input type="radio" name="type" id="web-sites" class="contact-modal__radio">
+                        <label for="web-sites" class="contact-modal__radios-label"></label>
+                        <span>Web sites</span>
+                    </label>
+                    <label>
+                        <input type="radio" name="type" id="outsorsing" class="contact-modal__radio">
+                        <label for="outsorsing" class="contact-modal__radios-label"></label>
+                        <span>Outsorsing</span>
+                    </label>
+                </div>
+
+                <label class="contact-modal__load-wrap modal__load-wrap">
+                    <input type="file" class="contact-modal__load modal__load">
+                    <span>
+                        <svg width="40" height="39" viewBox="0 0 40 39" fill="" xmlns="http://www.w3.org/2000/svg">
+                            <rect x="18.7031" width="3" height="39" rx="1.5" fill="#5196F9"/>
+                            <rect x="39.7031" y="18" width="3" height="39" rx="1.5" transform="rotate(90 39.7031 18)" fill="#5196F9"/>
+                        </svg> Attach technical requirement
+                    </span>
+                </label>
+
+                <div class="contact-modal__checkboxes">
+                    <label>
+                        <input type="checkbox" class="contact-modal__checkbox" id="privacy">
+                        <label for="privacy" class="contact-modal__checkboxes-label"></label>
+                        <a href="">I agree with privacy policy</a>
+                    </label>
+
+                    <label>
+                        <input type="checkbox" class="contact-modal__checkbox" id="nda">
+                        <label for="nda" class="contact-modal__checkboxes-label"></label>
+                        <a href="">Send me NDA</a>
+                    </label>
+                </div>
+
+                <button class="footer__submit contact-modal__submit">
+                    Discuss the project
+                    <span class="footer__submit-img">
+                        <img src="images/404_btn-img.png" alt="">
+                        <span class="footer__submit-hover">
+                            <img src="images/404_btn-hover.png" alt="">
+                        </span>
+                    </span>
+                </button>
+            </form>
+        </div>
+        <button class="contact-modal__close modal__close"><img src="images/close.svg" alt=""></button>
+    </div>
+    <div class="contact-modal__shadow modal__shadow"></div>
+</div>
+
+<div class="join-modal modal">
+    <div class="join-modal__content modal__content">
+        <div class="join-modal__block modal__block">
+            <div class="join-modal__heading modal__heading">
+                <h5 class="join-modal__title modal__title">Join our team!</h5>
+                <div class="join-modal__desc">We are looking for</div>
+                <ul class="join-modal__tags">
+                    <li class="join-modal__tag"># iOS Developer</li>
+                    <li class="join-modal__tag"># Android Developer</li>
+                    <li class="join-modal__tag"># Product Manager</li>
+                    <li class="join-modal__tag"># Hr Manager</li>
+                </ul>
+            </div>
+        </div>
+        <div class="join-modal__block modal__block">
+            <form action="" class="join-modal__form">
+                <label for="join_user-name" hidden></label>
+                <input type="text" class="join-modal__input modal__input input" id="join_user-name" placeholder="Name*">
+                <div class="modal-form__control notice">
+                    <label for="join_user-phone" hidden></label>
+                    <input type="tel" class="join-modal__input modal__input input" id="join_user-phone" placeholder="+380 (__) ___ __ __*">
+                    <label for="join_user-email" hidden></label>
+                    <input type="email" class="join-modal__input modal__input input" id="join_user-email" placeholder="Email">
+                </div>
+                <label for="join_user-profession" hidden></label>
+                <select class="modal__select join-modal__select" name="join_user-profession" id="join_user-profession">
+                    <option value="Front-end">Front-end Developer</option>
+                    <option value="Back-end">Back-end Developer</option>
+                    <option value="IOS">IOS Developer</option>
+                </select>
+                <label class="modal__load-wrap join-modal__load-wrap">
+                    <input type="file" class="modal__load">
+                    <span>
+                        <svg width="40" height="39" viewBox="0 0 40 39" fill="" xmlns="http://www.w3.org/2000/svg">
+                            <rect x="18.7031" width="3" height="39" rx="1.5" fill="#5196F9"/>
+                            <rect x="39.7031" y="18" width="3" height="39" rx="1.5" transform="rotate(90 39.7031 18)" fill="#5196F9"/>
+                        </svg> Attach technical requirement
+                    </span>
+                </label>
+
+                <button class="footer__submit join-modal__submit">
+                    Send
+                    <span class="footer__submit-img">
+                        <img src="images/join-no-hover.png" alt="">
+                        <span class="footer__submit-hover">
+                            <img src="images/join-hover.png" alt="">
+                        </span>
+                    </span>
+                </button>
+            </form>
+        </div>
+        <button class="join-modal__close modal__close"><img src="images/close.svg" alt=""></button>
+    </div>
+    <div class="contact-modal__shadow modal__shadow"></div>
+</div>
+
+<script src="https://kit.fontawesome.com/4cfcd34589.js" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/js/select2.min.js"></script>
+<script src="js/main.js"></script>
+<script src="js/company.js"></script>
+</body>
+</html>

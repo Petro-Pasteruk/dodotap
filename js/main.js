@@ -22,7 +22,7 @@ document.querySelectorAll(".main-menu__languages").forEach(languageMenu => {
         item.addEventListener("click", function (e) {
             e.preventDefault();
 
-            switch(index) {
+            switch (index) {
                 case 0:
                     slider.style.left = "-1px";
                     slider.style.transform = "translateX(0)";
@@ -74,7 +74,7 @@ if (document.querySelector(".footer__top-wrap")) {
 }
 
 
-function isVisible (target) {
+function isVisible(target) {
     const targetPosition = {
             top: window.pageYOffset + target.getBoundingClientRect().top,
             left: window.pageXOffset + target.getBoundingClientRect().left,

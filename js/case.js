@@ -25,8 +25,12 @@ const
 allTechnologyButtons.forEach((btn, btnIndex) => {
     btn.addEventListener("click", function () {
         if (!this.classList.contains("active")) {
-            allTechnologyButtons.forEach(item => { item.classList.remove("active"); });
-            allTechnologyItems.forEach(item => { item.classList.remove("active"); });
+            allTechnologyButtons.forEach(item => {
+                item.classList.remove("active");
+            });
+            allTechnologyItems.forEach(item => {
+                item.classList.remove("active");
+            });
 
             btn.classList.add("active");
             allTechnologyItems[btnIndex].classList.add("active");

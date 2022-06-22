@@ -13,13 +13,14 @@ document.querySelector("#join-team").addEventListener("click", function () {
 
 
 let reverse = 0;
-function loopHeading (itemClass) {
+
+function loopHeading(itemClass) {
     let
         allItems = document.querySelectorAll(itemClass);
 
     for (let i = 0; i < allItems.length; i++) {
         if (allItems[i].classList.contains("active")) {
-            if ((i+1) === allItems.length) {
+            if ((i + 1) === allItems.length) {
                 reverse = allItems.length - 1;
             }
 

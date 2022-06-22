@@ -65,11 +65,13 @@
     .not-found__wrapper {
         margin-bottom: 30px;
     }
+
     .not-found__content,
     .not-found__wrapper {
         width: 400px;
         height: 400px;
     }
+
     .not-found__text {
         width: 509px;
         height: 509px;
@@ -82,6 +84,7 @@
         width: 340px;
         height: 340px;
     }
+
     .not-found__text {
         width: 420px;
         height: 420px;
@@ -94,10 +97,12 @@
         width: 400px;
         height: 400px;
     }
+
     .not-found__text {
         width: 509px;
         height: 509px;
     }
+
     .not-found__desc {
         font-size: 14px;
     }
@@ -109,10 +114,12 @@
         width: 340px;
         height: 340px;
     }
+
     .not-found__text {
         width: 420px;
         height: 420px;
     }
+
     .not-found__desc {
         font-size: 14px;
         max-width: 70%;
@@ -125,18 +132,22 @@
         width: 250px;
         height: 250px;
     }
+
     .not-found__text {
         width: 320px;
         height: 320px;
     }
+
     .not-found__img {
         max-width: 90px;
     }
+
     .footer__submit {
         width: 230px;
         background: #0669F7;
         border-radius: 16px;
     }
+
     .not-found__desc {
         line-height: 16px;
         font-size: 12px;

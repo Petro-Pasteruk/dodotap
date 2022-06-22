@@ -1,4 +1,4 @@
-function initialProjectBlock (projectItemClass) {
+function initialProjectBlock(projectItemClass) {
     const allProjectSliders = [];
 
     document.querySelectorAll(projectItemClass).forEach((button, index) => {
@@ -17,7 +17,9 @@ function initialProjectBlock (projectItemClass) {
                 // heightOneScroll = (document.querySelector(".project").clientHeight + marginBottom) * index,
                 background = document.querySelector(".projects__content-bg");
 
-            allButtons.forEach(item => { item.classList.remove("active"); });
+            allButtons.forEach(item => {
+                item.classList.remove("active");
+            });
             this.classList.add("active");
 
             // projects.style.transform = "translateY(-" + heightOneScroll + "px)";
@@ -45,23 +47,23 @@ function initialProjectBlock (projectItemClass) {
 // function initialClientsBlock (clientsItemClass) {
 //     document.querySelectorAll(clientsItemClass).forEach(item => {
 //         item.addEventListener("mouseover", function () {
-            // this.classList.add("active");
-            // document.querySelectorAll(".clients__item").forEach(subItem => {
-            //     subItem.classList.add("hide");
-            // });
-            // this.classList.remove("hide");
-        // });
-        //
-        // item.addEventListener("mouseout", function () {
-            // this.classList.remove("active");
-            // document.querySelectorAll(".clients__item").forEach(subItem => {
-            //     subItem.classList.remove("hide");
-            // });
+// this.classList.add("active");
+// document.querySelectorAll(".clients__item").forEach(subItem => {
+//     subItem.classList.add("hide");
+// });
+// this.classList.remove("hide");
+// });
+//
+// item.addEventListener("mouseout", function () {
+// this.classList.remove("active");
+// document.querySelectorAll(".clients__item").forEach(subItem => {
+//     subItem.classList.remove("hide");
+// });
 //         });
 //     });
 // }
 
-function initialFaqBlock (faqItemClass) {
+function initialFaqBlock(faqItemClass) {
     const allFaqItems = document.querySelectorAll(faqItemClass);
 
     allFaqItems.forEach(faqItem => {
@@ -78,7 +80,7 @@ function initialFaqBlock (faqItemClass) {
     });
 }
 
-function initialWebsiteBlock (switherClass ,switherButtonClass, switherItemClass, switherCirceClass) {
+function initialWebsiteBlock(switherClass, switherButtonClass, switherItemClass, switherCirceClass) {
     const
         switherWrapper = document.querySelector(switherClass),
         switherCircle = document.querySelector(switherCirceClass),

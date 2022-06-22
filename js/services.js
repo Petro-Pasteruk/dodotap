@@ -10,10 +10,14 @@ const
     allSkillVectorItems = document.querySelectorAll(".skill-vector__item"),
     skillVector = document.querySelector(".skill-vector__vector");
 
-allSkillVectorButtons.forEach((btn, index) =>  {
+allSkillVectorButtons.forEach((btn, index) => {
     btn.addEventListener("click", function () {
-        allSkillVectorButtons.forEach(button => { button.classList.remove("active"); });
-        allSkillVectorItems.forEach(item => { item.classList.remove("active"); });
+        allSkillVectorButtons.forEach(button => {
+            button.classList.remove("active");
+        });
+        allSkillVectorItems.forEach(item => {
+            item.classList.remove("active");
+        });
 
         btn.classList.add("active");
         allSkillVectorItems[index].classList.add("active");
@@ -29,8 +33,12 @@ const
 
 allTechnologyButtons.forEach((btn, index) => {
     btn.addEventListener("click", function () {
-        allTechnologyButtons.forEach(button => { button.classList.remove("active"); });
-        allTechnologyItems.forEach(button => { button.classList.remove("active"); });
+        allTechnologyButtons.forEach(button => {
+            button.classList.remove("active");
+        });
+        allTechnologyItems.forEach(button => {
+            button.classList.remove("active");
+        });
 
         btn.classList.add("active");
         allTechnologyItems[index].classList.add("active");

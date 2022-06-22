@@ -8,7 +8,9 @@ switherButtons.forEach((btn, index) => {
     btn.addEventListener("click", function () {
         let introBlock = document.querySelector(".intro");
 
-        switherButtons.forEach(item => { item.classList.remove("active"); });
+        switherButtons.forEach(item => {
+            item.classList.remove("active");
+        });
         btn.classList.add("active");
 
         portfolioLists.forEach((list, listIndex) => {

@@ -9,12 +9,12 @@ class StagesSlider {
         this.interval = setting.interval ? setting.interval : 3000;
         this.autoplay = setting.autoplay ? setting.autoplay : false;
 
-        this.controlsElement =  setting.controlsElement ? document.querySelector(setting.controlsElement) : null;
+        this.controlsElement = setting.controlsElement ? document.querySelector(setting.controlsElement) : null;
 
         this.init();
     }
 
-    init () {
+    init() {
         this.slides.forEach((slide, index) => {
             if (index === 0) {
                 slide.classList.add("active");
@@ -36,15 +36,15 @@ class StagesSlider {
         }
     }
 
-    nextSlide () {
+    nextSlide() {
         this.reloadAutoplay();
         for (let i = 0; i < this.slides.length; i++) {
             if (this.slides[i].classList.contains("active")) {
                 this.slides[i].classList.remove("active");
 
-                if ((i+2) <= this.slides.length) {
-                    this.slides[i+1].classList.add("active");
-                    if ((i+2) < 10) {
+                if ((i + 2) <= this.slides.length) {
+                    this.slides[i + 1].classList.add("active");
+                    if ((i + 2) < 10) {
                         this.activeSlideIndicator.textContent = "0" + (i + 2);
                     } else {
                         this.activeSlideIndicator.textContent = "" + (i + 2);
@@ -79,15 +79,15 @@ class StagesSlider {
         }
     }
 
-    prevSlide () {
+    prevSlide() {
         this.reloadAutoplay();
         for (let i = 0; i < this.slides.length; i++) {
             if (this.slides[i].classList.contains("active")) {
                 this.slides[i].classList.remove("active");
 
-                if ((i-1) >= 0) {
-                    this.slides[i-1].classList.add("active");
-                    if ((i-1) < 10) {
+                if ((i - 1) >= 0) {
+                    this.slides[i - 1].classList.add("active");
+                    if ((i - 1) < 10) {
                         this.activeSlideIndicator.textContent = "0" + i;
                     } else {
                         this.activeSlideIndicator.textContent = "" + i;
@@ -113,7 +113,7 @@ class StagesSlider {
                     if (this.pagination) {
                         this.paginationProgressBar.style.width = this.oneStep * this.slides.length + "%";
                         this.paginationSteps.forEach((step, stepIndex) => {
-                            if (stepIndex <= this.slides.length ) {
+                            if (stepIndex <= this.slides.length) {
                                 step.classList.add("active");
                             } else {
                                 step.classList.remove("active");
@@ -126,22 +126,22 @@ class StagesSlider {
         }
     }
 
-    startAutoplay () {
+    startAutoplay() {
         this.intervalFunction = setInterval(() => {
             this.nextSlide();
         }, this.interval);
     }
 
-    stopAutoplay () {
+    stopAutoplay() {
         clearInterval(this.intervalFunction);
     }
 
-    reloadAutoplay () {
+    reloadAutoplay() {
         this.stopAutoplay();
         this.startAutoplay();
     }
 
-    initPagination () {
+    initPagination() {
         // create slider progress bar
         const
             progressBar = document.createElement("div"),
@@ -163,7 +163,7 @@ class StagesSlider {
             this.slides.forEach((slide, index) => {
                 const sliderStep = document.createElement("li");
                 sliderStep.classList.add("stages__step");
-                sliderStep.style.width =  100 / this.slides.length + "%";
+                sliderStep.style.width = 100 / this.slides.length + "%";
                 if (index === 0) {
                     sliderStep.classList.add("active");
                 }
@@ -178,7 +178,7 @@ class StagesSlider {
         }
     }
 
-    initSlideIndicator () {
+    initSlideIndicator() {
         const
             slideIndicator = document.createElement("div"),
             activeSlideIndicator = document.createElement("span"),
@@ -205,7 +205,7 @@ class StagesSlider {
         }
     }
 
-    initToggleButtons () {
+    initToggleButtons() {
         this.toggleButtonsWrapper = this.controlsElement.querySelector(".controls-buttons");
 
         if (this.toggleButtonsWrapper.querySelector(".prev")) {

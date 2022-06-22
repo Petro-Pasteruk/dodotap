@@ -1329,6 +1329,7 @@ html {
     align-items: center;
     padding: 3px;
     border-radius: 30px;
+    min-width: 108px;
     max-width: 108px;
     margin: 0 auto;
 }
@@ -5696,6 +5697,9 @@ html {
     .middle-screen {
         display: block;
     }
+    .project__pagination {
+        right: -80px;
+    }
 }
 
 @media (max-width: 1315px) {
@@ -5707,6 +5711,9 @@ html {
 @media (max-width: 1260px) {
     .case-web-intro__images {
         transform: translateX(40px);
+    }
+    .projects__content {
+        padding-left: 50px;
     }
 }
 
@@ -5781,6 +5788,15 @@ html {
     }
     .cases__case-wrap {
         height: 600px;
+    }
+    .projects__switcher {
+        padding-right: 60px;
+    }
+    .projects__content {
+        padding-left: 100px;
+    }
+    .project__pagination {
+        right: -24px;
     }
 }
 
@@ -6069,6 +6085,9 @@ html {
     }
     .case-animation__slides {
         left: 80%;
+    }
+    .projects__content {
+        padding-left: 50px;
     }
 }
 
@@ -6810,6 +6829,63 @@ html {
         height: 200px;
         width: 200px;
         position: relative;
+    }
+    .projects .container {
+        flex-direction: column;
+        padding: 0;
+    }
+    .projects__switcher {
+        padding-right: 0;
+        max-height: initial;
+    }
+    .projects__list {
+        flex-wrap: nowrap;
+        width: 100%;
+        overflow-y: auto;
+        gap: 13px;
+    }
+    .projects__img {
+        min-width: 92px;
+        max-width: 92px;
+    }
+    .projects__img > img {
+        width: 82px;
+    }
+    .projects__caption {
+        font-size: 14px;
+        line-height: 20px;
+        margin-top: 9px;
+    }
+    .projects-all {
+        height: 541px;
+    }
+    .projects__switcher, .projects__content {
+        padding: 0;
+        width: 100%;
+    }
+    .projects__switcher {
+        padding-top: 84px;
+        height: auto;
+        padding-left: 16px;
+    }
+    .project {
+        top: 100%;
+    }
+    .projects {
+        max-height: initial;
+    }
+    .projects__content-bg {
+        width: 100%;
+        top: auto;
+        height: 541px;
+    }
+    .projects__heading {
+        padding-right: 16px;
+        margin-bottom: 26px;
+    }
+    .projects__title {
+        font-size: 26px;
+        line-height: 32px;
     }
 }
 

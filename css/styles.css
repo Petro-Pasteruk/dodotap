@@ -3904,6 +3904,10 @@ html {
     margin-right: 0;
 }
 
+.technologySlider--mobile {
+    display: none;
+}
+
 .technology__img {}
 /* \Technology */
 
@@ -7489,6 +7493,7 @@ html {
         flex-wrap: nowrap;
         gap: 16px;
         overflow-x: auto;
+        padding-left: 12px;
     }
     .skill-vector__button {
         white-space: nowrap;
@@ -7509,6 +7514,7 @@ html {
     }
     .skill-vector {
         padding: 100px 0 69px;
+        overflow: hidden;
     }
     .skill-vector > .container {
         padding: 0;
@@ -7519,6 +7525,71 @@ html {
     }
     .skill-vector__list {
         padding: 0 16px;
+    }
+    .technology__buttons, .technology__list {
+        display: none;
+    }
+    .technology__item.technology__item--mobile {
+        position: relative;
+        opacity: 0;
+        flex-direction: column;
+        align-items: center;
+        gap: 40px;
+    }
+    .swiper-slide-active .technology__item.technology__item--mobile {
+        opacity: 1;
+    }
+    .technology__icons {
+        width: 100%;
+        gap: 15px;
+        justify-content: center;
+    }
+    .technology__icon {
+        margin-right: 0;
+        margin-bottom: 0;
+        width: 74px;
+        height: 74px;
+    }
+    .technology__item .technology__info {
+        width: 100%;
+    }
+    .technologySlider {
+        width: 100%;
+        position: relative;
+    }
+    .technologySlider--mobile {
+        display: block;
+    }
+    .technology__title {
+        font-size: 26px;
+        margin-bottom: 20px;
+    }
+    .technology__caption {
+        font-size: 18px;
+        margin-bottom: 6px;
+    }
+    .technology__desc {
+        font-size: 15px;
+        line-height: 20px;
+    }
+    .technology {
+        padding: 80px 0 92px;
+    }
+    .technology-pagination {
+        position: relative;
+        bottom: 0;
+        margin-top: 30px;
+    }
+    .technology-pagination .swiper-pagination-bullet {
+        width: 6px;
+        height: 6px;
+        background: rgba(45, 103, 238, 0.4);
+    }
+    .technology-pagination .swiper-pagination-bullet-active {
+        width: 26px;
+        background: #2D67EE;
+        border-radius: 4px;
+        transition: all .25s ease-in-out;
     }
 }
 

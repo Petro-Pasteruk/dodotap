@@ -6220,6 +6220,9 @@ html {
         padding-bottom: 0;
         padding-left: 0;
     }
+    .contact {
+        transform: translate(0);
+    }
 }
 
 @media (max-width: 830px) {
@@ -7721,6 +7724,39 @@ html {
     .business-assistance__list {
         justify-content: flex-start;
         gap: 17px;
+    }
+    .contact {
+        flex-direction: column;
+    }
+    .contact__block {
+        width: 100%;
+    }
+    .contact__block:nth-of-type(1) {
+        border-radius: 30px 30px 0 0;
+        padding: 60px 17px;
+        background-position: left center;
+    }
+    .contact__block:nth-of-type(2) {
+        border-radius: 0 0 30px 30px;
+        padding: 52px 18px;
+    }
+
+    .contact .footer__submit {
+        width: 100%;
+        max-width: 307px;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 0;
+        height: 50px;
+    }
+    .contact .footer__input {
+        height: 45px;
+    }
+    .contact__title {
+        font-size: 30px;
+    }
+    .contact__desc {
+        font-size: 15px;
     }
 }
 

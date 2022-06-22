@@ -18,6 +18,15 @@ const teamSwiper = new Swiper(".team-swiper", {
         }
     }
 });
+const serviceSwiper = new Swiper(".services-swiper", {
+    slidesPerView: 1,
+    spaceBetween: 16,
+    centeredSlides: true,
+    pagination: {
+        el: ".swiper-pagination",
+        clickable: true
+    },
+});
 
 initialProjectBlock(".projects__item");
 // initialClientsBlock(".clients__img-wrap");

@@ -29,14 +29,13 @@ const switherSlider = new Swiper(".switherSlider", {
   },
 });
 
-switherSlider.on("transitionEnd", function () {
+switherSlider.on("slideChange", function () {
   const websites = document.querySelector(".websites");
+  let activeSlider = this.slides[this.activeIndex];
 
-  if (switherSlider.realIndex == 0) {
-    websites.style.backgroundColor = "rgb(45, 103, 238)";
-  } else if (switherSlider.realIndex == 1) {
-    websites.style.backgroundColor = "rgb(95, 124, 81)";
-  } else if (switherSlider.realIndex == 2) {
-    websites.style.backgroundColor = "rgb(53, 53, 53)";
-  }
+  websites.style.backgroundColor = activeSlider.dataset.bgColor;
 });
+
+const
+    clients = document.getElementById('clients'),
+    parallaxInstance = new Parallax(clients);

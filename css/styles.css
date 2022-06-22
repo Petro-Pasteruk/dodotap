@@ -1729,6 +1729,10 @@ html {
     z-index: 2;
 }
 
+.clients .tablet {
+    display: none;
+}
+
 .clients__title {
     margin-bottom: 10px;
 }
@@ -5813,6 +5817,15 @@ html {
     .home-intro__anim.two {
         right: -500px;
     }
+
+    .clients__item:nth-of-type(1) .clients__img-wrap { left: 50px; }
+    .clients__item:nth-of-type(2) .clients__img-wrap { left: 70px; }
+    .clients__item:nth-of-type(3) .clients__img-wrap { left: 60px; }
+    .clients__item:nth-of-type(4) .clients__img-wrap { left: 205px; }
+    .clients__item:nth-of-type(5) .clients__img-wrap { left: 400px; }
+    .clients__item:nth-of-type(6) .clients__img-wrap { bottom: 40px; right: 305px; }
+    .clients__item:nth-of-type(7) .clients__img-wrap { right: 130px; }
+    .clients__item:nth-of-type(8) .clients__img-wrap { right: 10px; }
 }
 
 @media (max-width: 1010px) {
@@ -6954,6 +6967,38 @@ html {
         font-size: 26px;
         line-height: 32px;
     }
+    .clients {
+        justify-content: initial;
+        align-items: initial;
+        text-align: left;
+        padding: 80px 16px 60px;
+        min-height: initial;
+        background: url("../images/clients_mob-bg.jpg") no-repeat;
+        background-size: cover;
+    }
+    .clients__list {
+        display: none;
+    }
+
+    .clients__list.tablet {
+        display: flex;
+        flex-wrap: wrap;
+        position: initial;
+        height: initial;
+        margin-top: 30px;
+    }
+    .clients__item {
+        position: initial;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: calc(100% / 5);
+        filter: none;
+        margin-bottom: 30px;
+    }
+    .clients__img {
+        width: 90px;
+    }
 }
 
 @media (max-width: 730px) {
@@ -7611,6 +7656,15 @@ html {
         flex-direction: column-reverse;
         margin-bottom: 32px;
     }
+    .services__block {
+        max-width: 100%;
+    }
+    .desc {
+        font-size: 15px;
+        line-height: 22px;
+        color: #231E57;
+        opacity: .9;
+    }
     .services__label {
         position: relative;
         right: initial;
@@ -7632,6 +7686,17 @@ html {
     }
     .services__title {
         margin-bottom: 9px;
+    }
+    .clients__item {
+        width: calc(100% / 3);
+    }
+    .clients__title {
+        margin-bottom: 5px;
+    }
+    .clients__desc {
+        font-size: 14px;
+        line-height: 20px;
+        color: #231E57;
     }
 }
 
@@ -7995,6 +8060,9 @@ html {
         top: 103px;
         left: 183px;
         transform: none;
+    }
+    .clients__img {
+        width: 80px;
     }
 }
 

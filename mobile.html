@@ -1,907 +1,1585 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport"
-          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"
+    />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>Dodo tap</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,400&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="css/animations.css">
-    <link rel="stylesheet" href="css/styles.css">
-</head>
-<body>
-
-<div id="wrapper">
-    <header id="header" class="header container">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,400&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/animations.css" />
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
+  <body>
+    <div id="wrapper">
+      <header id="header" class="header container">
         <a href="" class="header__logo logo blue">Dodotap.</a>
         <div class="header__controls">
-            <a href="mailto:hello@dodotap.com" class="header__btn header__email">hello@dodotap.com</a>
-            <button class="header__burger"></button>
+          <a href="mailto:hello@dodotap.com" class="header__btn header__email"
+            >hello@dodotap.com</a
+          >
+          <button class="header__burger"></button>
         </div>
-    </header>
-    <div class="main-menu__wrapper" id="main-menu">
+      </header>
+      <div class="main-menu__wrapper" id="main-menu">
         <nav class="main-menu">
-            <div class="container">
-                <div class="main-menu__heading">
-                    <a href="" class="main-menu__logo logo white">Dodotap.</a>
-                    <div class="main-menu__controls">
-                        <ul class="main-menu__languages">
-                            <li class="main-menu__slider"></li>
-                            <li class="main-menu__language"><a href="">EN</a></li>
-                            <li class="main-menu__language"><a href="">UK</a></li>
-                            <li class="main-menu__language"><a href="">RU</a></li>
-                        </ul>
-                        <a href="mailto:hello@dodotap.com" class="header__btn header__email revert">hello@dodotap.com</a>
-                        <a class="main-menu__close header__btn revert">
-                            <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <path fill-rule="evenodd" clip-rule="evenodd" d="M15.9544 17.5003C16.3811 17.9271 17.073 17.9271 17.4998 17.5003C17.9266 17.0735 17.9266 16.3816 17.4998 15.9548L10.5456 9.00058L17.5004 2.04574C17.9272 1.61898 17.9272 0.927051 17.5004 0.500284C17.0736 0.0735175 16.3817 0.0735188 15.9549 0.500286L9.0001 7.45512L2.04522 0.500241C1.61845 0.0734744 0.926526 0.0734743 0.499759 0.500241C0.072992 0.927008 0.0729933 1.61894 0.49976 2.0457L7.45464 9.00058L0.500342 15.9549C0.0735748 16.3816 0.0735746 17.0736 0.500341 17.5003C0.927108 17.9271 1.61904 17.9271 2.0458 17.5003L9.0001 10.546L15.9544 17.5003Z" fill="white"/>
-                            </svg>
-                        </a>
-                    </div>
-                </div>
-                <ul class="main-menu__list">
-                    <li class="main-menu__item"><a href="" class="main-menu__link">Home</a></li>
-                    <li class="main-menu__item"><a href="" class="main-menu__link">Company</a></li>
-                    <li class="main-menu__item"><a href="" class="main-menu__link">Services</a></li>
-                    <li class="main-menu__item"><a href="" class="main-menu__link">Cases</a></li>
-                    <li class="main-menu__item"><a href="" class="main-menu__link">Contact</a></li>
+          <div class="container">
+            <div class="main-menu__heading">
+              <a href="" class="main-menu__logo logo white">Dodotap.</a>
+              <div class="main-menu__controls">
+                <ul class="main-menu__languages">
+                  <li class="main-menu__slider"></li>
+                  <li class="main-menu__language"><a href="">EN</a></li>
+                  <li class="main-menu__language"><a href="">UK</a></li>
+                  <li class="main-menu__language"><a href="">RU</a></li>
                 </ul>
-                <a href="" class="main-menu__btn btn--imprint main-menu__tablet">
-                    Discuss the project
-                    <span class="btn--imprint__img">
-                            <img src="images/imprint-small_no-hover.svg" alt="" class="btn--imprint__no-hover">
-                            <span class="btn--imprint__hover">
-                                <img src="images/imprint-small_hover.svg" alt="">
-                            </span>
-                        </span>
+                <a
+                  href="mailto:hello@dodotap.com"
+                  class="header__btn header__email revert"
+                  >hello@dodotap.com</a
+                >
+                <a class="main-menu__close header__btn revert">
+                  <svg
+                    width="18"
+                    height="18"
+                    viewBox="0 0 18 18"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      fill-rule="evenodd"
+                      clip-rule="evenodd"
+                      d="M15.9544 17.5003C16.3811 17.9271 17.073 17.9271 17.4998 17.5003C17.9266 17.0735 17.9266 16.3816 17.4998 15.9548L10.5456 9.00058L17.5004 2.04574C17.9272 1.61898 17.9272 0.927051 17.5004 0.500284C17.0736 0.0735175 16.3817 0.0735188 15.9549 0.500286L9.0001 7.45512L2.04522 0.500241C1.61845 0.0734744 0.926526 0.0734743 0.499759 0.500241C0.072992 0.927008 0.0729933 1.61894 0.49976 2.0457L7.45464 9.00058L0.500342 15.9549C0.0735748 16.3816 0.0735746 17.0736 0.500341 17.5003C0.927108 17.9271 1.61904 17.9271 2.0458 17.5003L9.0001 10.546L15.9544 17.5003Z"
+                      fill="white"
+                    />
+                  </svg>
                 </a>
-                <ul class="main-menu__languages main-menu__tablet">
-                    <li class="main-menu__slider"></li>
-                    <li class="main-menu__language"><a href="">EN</a></li>
-                    <li class="main-menu__language"><a href="">UK</a></li>
-                    <li class="main-menu__language"><a href="">RU</a></li>
-                </ul>
+              </div>
             </div>
+            <ul class="main-menu__list">
+              <li class="main-menu__item">
+                <a href="" class="main-menu__link">Home</a>
+              </li>
+              <li class="main-menu__item">
+                <a href="" class="main-menu__link">Company</a>
+              </li>
+              <li class="main-menu__item">
+                <a href="" class="main-menu__link">Services</a>
+              </li>
+              <li class="main-menu__item">
+                <a href="" class="main-menu__link">Cases</a>
+              </li>
+              <li class="main-menu__item">
+                <a href="" class="main-menu__link">Contact</a>
+              </li>
+            </ul>
+            <a href="" class="main-menu__btn btn--imprint main-menu__tablet">
+              Discuss the project
+              <span class="btn--imprint__img">
+                <img
+                  src="images/imprint-small_no-hover.svg"
+                  alt=""
+                  class="btn--imprint__no-hover"
+                />
+                <span class="btn--imprint__hover">
+                  <img src="images/imprint-small_hover.svg" alt="" />
+                </span>
+              </span>
+            </a>
+            <ul class="main-menu__languages main-menu__tablet">
+              <li class="main-menu__slider"></li>
+              <li class="main-menu__language"><a href="">EN</a></li>
+              <li class="main-menu__language"><a href="">UK</a></li>
+              <li class="main-menu__language"><a href="">RU</a></li>
+            </ul>
+          </div>
         </nav>
         <div class="main-menu__shadow"></div>
-    </div>
-    <main>
+      </div>
+      <main>
         <article class="mobile-intro intro two-intro">
-            <video autoplay muted loop class="two-intro__heading-bg">
-                <source src="video/mobile-page_bg-1440.webm" type="video/webm">
-            </video>
-            <div class="container">
-                <div class="intro__heading">
-                    <div>
-                        <ul class="intro__breadcrumbs">
-                            <li class="intro__breadcrumb"><a href="" class="intro__breadcrumbs-link">Services</a></li>
-                            <li class="intro__breadcrumb active"><a href="" class="intro__breadcrumbs-link">Mobile apps</a></li>
-                        </ul>
-                        <h1 class="two-intro__title">Mobile development</h1>
-                        <div class="two-intro__desc">A clear interface and reliable code is the guarantee of a successful mobile application that will solve your problem.</div>
-                        <a href="" class="two-intro__btn btn--imprint">
-                            Discuss the project
-                            <span class="btn--imprint__img">
-                                <img src="images/imprint-small_no-hover.svg" alt="" class="btn--imprint__no-hover">
-                                <span class="btn--imprint__hover">
-                                    <img src="images/imprint-small_hover.svg" alt="">
-                                </span>
-                            </span>
-                        </a>
-                    </div>
-                    <ul class="intro__socials blue--bg">
-                        <li class="intro__social"><a href="" class="intro__link">Instagram</a></li>
-                        <li class="intro__social"><a href="" class="intro__link">Behance</a></li>
-                        <li class="intro__social"><a href="" class="intro__link">Linkedin</a></li>
-                    </ul>
+          <video autoplay muted loop class="two-intro__heading-bg">
+            <source src="video/mobile-page_bg-1440.webm" type="video/webm" />
+          </video>
+          <div class="container">
+            <div class="intro__heading">
+              <div>
+                <ul class="intro__breadcrumbs">
+                  <li class="intro__breadcrumb">
+                    <a href="" class="intro__breadcrumbs-link">Services</a>
+                  </li>
+                  <li class="intro__breadcrumb active">
+                    <a href="" class="intro__breadcrumbs-link">Mobile apps</a>
+                  </li>
+                </ul>
+                <h1 class="two-intro__title">Mobile development</h1>
+                <div class="two-intro__desc">
+                  A clear interface and reliable code is the guarantee of a
+                  successful mobile application that will solve your problem.
                 </div>
+                <a href="" class="two-intro__btn btn--imprint">
+                  Discuss the project
+                  <span class="btn--imprint__img">
+                    <img
+                      src="images/imprint-small_no-hover.svg"
+                      alt=""
+                      class="btn--imprint__no-hover"
+                    />
+                    <span class="btn--imprint__hover">
+                      <img src="images/imprint-small_hover.svg" alt="" />
+                    </span>
+                  </span>
+                </a>
+              </div>
+              <ul class="intro__socials blue--bg">
+                <li class="intro__social">
+                  <a href="" class="intro__link">Instagram</a>
+                </li>
+                <li class="intro__social">
+                  <a href="" class="intro__link">Behance</a>
+                </li>
+                <li class="intro__social">
+                  <a href="" class="intro__link">Linkedin</a>
+                </li>
+              </ul>
             </div>
-            <div class="intro__animation"></div>
+          </div>
+          <div class="intro__animation"></div>
         </article>
         <article class="applications">
-            <div class="container">
-                <div class="applications__heading">
-                    <h3 class="applications__title title--blue title--limited">What applications do we create?</h3>
-                    <div class="applications__label label-block">Development</div>
-                </div>
-                <ul class="applications__list">
-                    <li class="applications__item">
-                        <div class="applications__head">
-                            <div class="applications__icon"><img src="images/applications-img_1.png" alt="" class="applications__img"></div>
-                            <div class="applications__caption">IOS</div>
-                        </div>
-                        <div class="applications__desc">The importance of developing an iOS application is evident in its significant market power and the number of users around the world.</div>
-                    </li>
-                    <li class="applications__item">
-                        <div class="applications__head">
-                            <div class="applications__icon"><img src="images/applications-img_2.png" alt="" class="applications__img"></div>
-                            <div class="applications__caption">Android</div>
-                        </div>
-                        <div class="applications__desc">Android application development is necessary in order to reduce distance between your product and users of this platform.</div>
-                    </li>
-                    <li class="applications__item">
-                        <div class="applications__head">
-                            <div class="applications__icon"><img src="images/applications-img_3.png" alt="" class="applications__img"></div>
-                            <div class="applications__caption">Crossplatform</div>
-                        </div>
-                        <div class="applications__desc">A convenient solution for small projects that allows you to create an application for various platforms with the same code base.</div>
-                    </li>
-                </ul>
+          <div class="container">
+            <div class="applications__heading">
+              <h3 class="applications__title title--blue title--limited">
+                What applications do we create?
+              </h3>
+              <div class="applications__label label-block">Development</div>
             </div>
+            <ul class="applications__list">
+              <li class="applications__item">
+                <div class="applications__head">
+                  <div class="applications__icon">
+                    <img
+                      src="images/applications-img_1.png"
+                      alt=""
+                      class="applications__img"
+                    />
+                  </div>
+                  <div class="applications__caption">IOS</div>
+                </div>
+                <div class="applications__desc">
+                  The importance of developing an iOS application is evident in
+                  its significant market power and the number of users around
+                  the world.
+                </div>
+              </li>
+              <li class="applications__item">
+                <div class="applications__head">
+                  <div class="applications__icon">
+                    <img
+                      src="images/applications-img_2.png"
+                      alt=""
+                      class="applications__img"
+                    />
+                  </div>
+                  <div class="applications__caption">Android</div>
+                </div>
+                <div class="applications__desc">
+                  Android application development is necessary in order to
+                  reduce distance between your product and users of this
+                  platform.
+                </div>
+              </li>
+              <li class="applications__item">
+                <div class="applications__head">
+                  <div class="applications__icon">
+                    <img
+                      src="images/applications-img_3.png"
+                      alt=""
+                      class="applications__img"
+                    />
+                  </div>
+                  <div class="applications__caption">Crossplatform</div>
+                </div>
+                <div class="applications__desc">
+                  A convenient solution for small projects that allows you to
+                  create an application for various platforms with the same code
+                  base.
+                </div>
+              </li>
+            </ul>
+          </div>
         </article>
         <article class="business-assistance">
-            <div class="container">
-                <h3 class="business-assistance__title title--white title--limited">How the app can help your business?</h3>
-                <div class="business-assistance__content">
-                    <ul class="business-assistance__list">
-                        <li class="business-assistance__item">
-                            <div class="business-assistance__heading">
-                                <div class="business-assistance__number">01</div>
-                                <div class="business-assistance__caption">Sales channel</div>
-                            </div>
-                            <div class="business-assistance__desc">Give your customer the opportunity to buy your product with just two clicks on their phone.</div>
-                        </li>
-                        <li class="business-assistance__item">
-                            <div class="business-assistance__heading">
-                                <div class="business-assistance__number">03</div>
-                                <div class="business-assistance__caption">Loyalty</div>
-                            </div>
-                            <div class="business-assistance__desc">App development is important for your brand, it increases the frequency of purchases and the average check.</div>
-                        </li>
-                        <li class="business-assistance__item">
-                            <div class="business-assistance__heading">
-                                <div class="business-assistance__number">02</div>
-                                <div class="business-assistance__caption">Notification</div>
-                            </div>
-                            <div class="business-assistance__desc">You always need to stay in touch with your customers, for this there are Push Notifications.</div>
-                        </li>
-                        <li class="business-assistance__item">
-                            <div class="business-assistance__heading">
-                                <div class="business-assistance__number">04</div>
-                                <div class="business-assistance__caption">Effectiveness</div>
-                            </div>
-                            <div class="business-assistance__desc">According to statistics, the conversion of users in the app is four times higher than in the mobile version of the site.</div>
-                        </li>
-                    </ul>
-                    <div class="business-assistance__wrapper">
-                        <img src="images/business-assistance_img.png" alt="" class="business-assistance__img">
-                    </div>
-                </div>
+          <div class="container">
+            <h3 class="business-assistance__title title--white title--limited">
+              How the app can help your business?
+            </h3>
+            <div
+              class="business-assistance__wrapper business-assistance__wrapper--mobile"
+            >
+              <img
+                src="images/business-assistance_img.png"
+                alt=""
+                class="business-assistance__img"
+              />
             </div>
+            <div class="business-assistance__content">
+              <ul class="business-assistance__list">
+                <li class="business-assistance__item">
+                  <div class="business-assistance__heading">
+                    <div class="business-assistance__number">01</div>
+                    <div class="business-assistance__caption">
+                      Sales channel
+                    </div>
+                  </div>
+                  <div class="business-assistance__desc">
+                    Give your customer the opportunity to buy your product with
+                    just two clicks on their phone.
+                  </div>
+                </li>
+                <li class="business-assistance__item">
+                  <div class="business-assistance__heading">
+                    <div class="business-assistance__number">03</div>
+                    <div class="business-assistance__caption">Loyalty</div>
+                  </div>
+                  <div class="business-assistance__desc">
+                    App development is important for your brand, it increases
+                    the frequency of purchases and the average check.
+                  </div>
+                </li>
+                <li class="business-assistance__item">
+                  <div class="business-assistance__heading">
+                    <div class="business-assistance__number">02</div>
+                    <div class="business-assistance__caption">Notification</div>
+                  </div>
+                  <div class="business-assistance__desc">
+                    You always need to stay in touch with your customers, for
+                    this there are Push Notifications.
+                  </div>
+                </li>
+                <li class="business-assistance__item">
+                  <div class="business-assistance__heading">
+                    <div class="business-assistance__number">04</div>
+                    <div class="business-assistance__caption">
+                      Effectiveness
+                    </div>
+                  </div>
+                  <div class="business-assistance__desc">
+                    According to statistics, the conversion of users in the app
+                    is four times higher than in the mobile version of the site.
+                  </div>
+                </li>
+              </ul>
+              <div class="business-assistance__wrapper">
+                <img
+                  src="images/business-assistance_img.png"
+                  alt=""
+                  class="business-assistance__img"
+                />
+              </div>
+            </div>
+          </div>
         </article>
         <article class="stages">
-            <div class="stages__content">
-                <div class="container">
-                    <h3 class="stages__title title--blue">Stages of creating products</h3>
-                    <div class="stages__wrapper stageSlider">
-                        <div class="stages__pagination"></div>
-                        <ul class="stages__slides">
-                            <li data-slide-name="Audit" class="stages__slide">
-                                <img src="images/stage_1.png" alt="" class="stages__img">
-                                <div class="stages__content">
-                                    <div class="stages__sup-caption">First stage</div>
-                                    <div class="stages__caption">Audit</div>
-                                    <div class="stages__desc">
-                                        <p>The initial stage of product development, which includes the discussion of all important details, the definition of the main goals and needs.</p>
-                                        <p>It is the audit that also allows you to determine the qualitative characteristics of the product: its terms and cost of development.</p>
-                                    </div>
-                                </div>
-                            </li>
-                            <li data-slide-name="BackLog" class="stages__slide">
-                                <img src="images/stage_2.png" alt="" class="stages__img">
-                                <div class="stages__content">
-                                    <div class="stages__sup-caption">Second stage</div>
-                                    <div class="stages__caption">BackLog</div>
-                                    <div class="stages__desc">
-                                        <p>It is very important for us that not only we, but also our client understand what exactly we are doing and what the end result will be.</p>
-                                        <p>To do this, we create a kind of product passport called Backlog, where each component is accurately described, from the logic of a small button to the operation of the application functionality.</p>
-                                    </div>
-                                </div>
-                            </li>
-                            <li data-slide-name="UX/UI design" class="stages__slide">
-                                <img src="images/stage_3.png" alt="" class="stages__img">
-                                <div class="stages__content">
-                                    <div class="stages__sup-caption">Third stage</div>
-                                    <div class="stages__caption">UX / UI design</div>
-                                    <div class="stages__desc">
-                                        <p>Our design makes the product special. Each new project gets its own colours, shapes, style, and an original set of icons. We always create a stylebook that describes the visual logic of the app, too.</p>
-                                        <p>No compromising, not in any phase of the project, and that’s especially true for design. It just has to be perfect.</p>
-                                    </div>
-                                </div>
-                            </li>
-                            <li data-slide-name="Development" class="stages__slide">
-                                <img src="images/stage_4.png" alt="" class="stages__img">
-                                <div class="stages__content">
-                                    <div class="stages__sup-caption">Fourth stage</div>
-                                    <div class="stages__caption">Development</div>
-                                    <div class="stages__desc">
-                                        <p>The development stage includes writing stable code, for this we use the latest methods and technologies. A whole team of experienced professionals is responsible for its quality.</p>
-                                        <p>It is necessary that everything be done in accordance with the rules and requirements for the further unloading of the product on the platforms.</p>
-                                    </div>
-                                </div>
-                            </li>
-                            <li data-slide-name="Support" class="stages__slide">
-                                <img src="images/stage_5.png" alt="" class="stages__img">
-                                <div class="stages__content">
-                                    <div class="stages__sup-caption">Fifth stage</div>
-                                    <div class="stages__caption">Support</div>
-                                    <div class="stages__desc">
-                                        <p>We try to build long-term relationships with all customers. To this end, we propose to continue our cooperation in the form of a full technical support for your product by our team.</p>
-                                        <p>We create unique conditions for everyone, based on your needs</p>
-                                    </div>
-                                </div>
-                            </li>
-                        </ul>
-                        <div class="stages__controls">
-                            <div class="stages__buttons controls-buttons">
-                                <button class="stages__button prev"><img src="images/stages-arrow-left.png" alt=""></button>
-                                <button class="stages__button next">
-                                    <span class="stages__image-wrap">
-                                        <img src="images/stages-arrow-right.png" alt="" class="stages__image">
-                                    </span>
-                                </button>
-                            </div>
-                        </div>
+          <div class="stages__content">
+            <div class="container">
+              <h3 class="stages__title title--blue">
+                Stages of creating products
+              </h3>
+              <div class="stages__wrapper stageSlider">
+                <div class="stages__pagination"></div>
+                <ul class="stages__slides">
+                  <li data-slide-name="Audit" class="stages__slide">
+                    <img src="images/stage_1.png" alt="" class="stages__img" />
+                    <div class="stages__content">
+                      <div class="stages__sup-caption">First stage</div>
+                      <div class="stages__caption">Audit</div>
+                      <div class="stages__desc">
+                        <p>
+                          The initial stage of product development, which
+                          includes the discussion of all important details, the
+                          definition of the main goals and needs.
+                        </p>
+                        <p>
+                          It is the audit that also allows you to determine the
+                          qualitative characteristics of the product: its terms
+                          and cost of development.
+                        </p>
+                      </div>
                     </div>
+                  </li>
+                  <li data-slide-name="BackLog" class="stages__slide">
+                    <img src="images/stage_2.png" alt="" class="stages__img" />
+                    <div class="stages__content">
+                      <div class="stages__sup-caption">Second stage</div>
+                      <div class="stages__caption">BackLog</div>
+                      <div class="stages__desc">
+                        <p>
+                          It is very important for us that not only we, but also
+                          our client understand what exactly we are doing and
+                          what the end result will be.
+                        </p>
+                        <p>
+                          To do this, we create a kind of product passport
+                          called Backlog, where each component is accurately
+                          described, from the logic of a small button to the
+                          operation of the application functionality.
+                        </p>
+                      </div>
+                    </div>
+                  </li>
+                  <li data-slide-name="UX/UI design" class="stages__slide">
+                    <img src="images/stage_3.png" alt="" class="stages__img" />
+                    <div class="stages__content">
+                      <div class="stages__sup-caption">Third stage</div>
+                      <div class="stages__caption">UX / UI design</div>
+                      <div class="stages__desc">
+                        <p>
+                          Our design makes the product special. Each new project
+                          gets its own colours, shapes, style, and an original
+                          set of icons. We always create a stylebook that
+                          describes the visual logic of the app, too.
+                        </p>
+                        <p>
+                          No compromising, not in any phase of the project, and
+                          that’s especially true for design. It just has to be
+                          perfect.
+                        </p>
+                      </div>
+                    </div>
+                  </li>
+                  <li data-slide-name="Development" class="stages__slide">
+                    <img src="images/stage_4.png" alt="" class="stages__img" />
+                    <div class="stages__content">
+                      <div class="stages__sup-caption">Fourth stage</div>
+                      <div class="stages__caption">Development</div>
+                      <div class="stages__desc">
+                        <p>
+                          The development stage includes writing stable code,
+                          for this we use the latest methods and technologies. A
+                          whole team of experienced professionals is responsible
+                          for its quality.
+                        </p>
+                        <p>
+                          It is necessary that everything be done in accordance
+                          with the rules and requirements for the further
+                          unloading of the product on the platforms.
+                        </p>
+                      </div>
+                    </div>
+                  </li>
+                  <li data-slide-name="Support" class="stages__slide">
+                    <img src="images/stage_5.png" alt="" class="stages__img" />
+                    <div class="stages__content">
+                      <div class="stages__sup-caption">Fifth stage</div>
+                      <div class="stages__caption">Support</div>
+                      <div class="stages__desc">
+                        <p>
+                          We try to build long-term relationships with all
+                          customers. To this end, we propose to continue our
+                          cooperation in the form of a full technical support
+                          for your product by our team.
+                        </p>
+                        <p>
+                          We create unique conditions for everyone, based on
+                          your needs
+                        </p>
+                      </div>
+                    </div>
+                  </li>
+                </ul>
+                <div class="stages__controls">
+                  <div class="stages__buttons controls-buttons">
+                    <button class="stages__button prev">
+                      <img src="images/stages-arrow-left.png" alt="" />
+                    </button>
+                    <button class="stages__button next">
+                      <span class="stages__image-wrap">
+                        <img
+                          src="images/stages-arrow-right.png"
+                          alt=""
+                          class="stages__image"
+                        />
+                      </span>
+                    </button>
+                  </div>
                 </div>
-                <div class="stages__text one">
-                    <span>IOS</span>
-                    <span>Project</span>
-                    <span>Development</span>
-                </div>
-                <div class="stages__text two">
-                    <span>Designer</span>
-                    <span>Android</span>
-                    <span>Web developer</span>
-                </div>
+              </div>
             </div>
-            <div class="contact__wrapper">
-                <div class="contact container">
-                    <div class="contact__block">
-                        <div class="contact__heading">
-                            <h5 class="contact__title title--blue">Contact us!</h5>
-                            <div class="contact__desc">Tell us more about your idea and let’s create something great!</div>
-                        </div>
-                    </div>
-                    <div class="contact__block">
-                        <form action="" class="contact__form">
-                            <label for="contact-block-user_name" hidden></label>
-                            <input type="text" class="input footer__input" id="contact-block-user_name" placeholder="Name">
-                            <label for="contact-block-user_phone" hidden></label>
-                            <input type="tel" class="input footer__input" id="contact-block-user_phone" placeholder="+380 (__) ___ __ __">
-                            <label for="contact-block-user_email" hidden></label>
-                            <input type="email" class="input footer__input" id="contact-block-user_email" placeholder="Email">
-                            <button class="footer__submit">
-                                Discuss the project
-                                <span class="footer__submit-img">
-                                    <img src="images/footer-no-hover.png" alt="">
-                                    <span class="footer__submit-hover">
-                                        <img src="images/footer-hover.png" alt="">
-                                    </span>
-                                </span>
-                            </button>
-                        </form>
-                    </div>
-                </div>
+            <div class="stages__text one">
+              <span>IOS</span>
+              <span>Project</span>
+              <span>Development</span>
             </div>
+            <div class="stages__text two">
+              <span>Designer</span>
+              <span>Android</span>
+              <span>Web developer</span>
+            </div>
+          </div>
+          <div class="contact__wrapper">
+            <div class="contact container">
+              <div class="contact__block">
+                <div class="contact__heading">
+                  <h5 class="contact__title title--blue">Contact us!</h5>
+                  <div class="contact__desc">
+                    Tell us more about your idea and let’s create something
+                    great!
+                  </div>
+                </div>
+              </div>
+              <div class="contact__block">
+                <form action="" class="contact__form">
+                  <label for="contact-block-user_name" hidden></label>
+                  <input
+                    type="text"
+                    class="input footer__input"
+                    id="contact-block-user_name"
+                    placeholder="Name"
+                  />
+                  <label for="contact-block-user_phone" hidden></label>
+                  <input
+                    type="tel"
+                    class="input footer__input"
+                    id="contact-block-user_phone"
+                    placeholder="+380 (__) ___ __ __"
+                  />
+                  <label for="contact-block-user_email" hidden></label>
+                  <input
+                    type="email"
+                    class="input footer__input"
+                    id="contact-block-user_email"
+                    placeholder="Email"
+                  />
+                  <button class="footer__submit">
+                    Discuss the project
+                    <span class="footer__submit-img">
+                      <img src="images/footer-no-hover.png" alt="" />
+                      <span class="footer__submit-hover">
+                        <img src="images/footer-hover.png" alt="" />
+                      </span>
+                    </span>
+                  </button>
+                </form>
+              </div>
+            </div>
+          </div>
         </article>
         <article class="projects">
-            <div class="projects__content-bg"></div>
-            <video autoplay muted loop class="project__swither-bg">
-                <source src="video/case_block-bg-570.webm" type="video/webm">
-            </video>
-            <div class="container">
-                <div class="projects__switcher">
-                    <div class="projects__heading">
-                        <div class="projects__title">Projects</div>
-                        <a href="" class="projects__link link">More</a>
-                    </div>
-                    <ul class="projects__list">
-                        <li class="projects__item light_blue active" data-slider-class=".tripline" data-color="#0A84FF">
-                            <div class="projects__img">
-                                <img src="images/projects_1.png" alt="">
-                            </div>
-                            <div class="projects__caption">Tripline</div>
-                        </li>
-                        <li class="projects__item violet" data-slider-class=".urbanist" data-color="#7C37FA">
-                            <div class="projects__img">
-                                <img src="images/projects_2.png" alt="">
-                            </div>
-                            <div class="projects__caption">Urbanist</div>
-                        </li>
-                        <li class="projects__item dark_violet" data-slider-class=".zakhyst" data-color="#170F5D">
-                            <div class="projects__img">
-                                <img src="images/projects_3.png" alt="">
-                            </div>
-                            <div class="projects__caption">Zakhyst</div>
-                        </li>
-                        <li class="projects__item green" data-slider-class=".prengi" data-color="#45AA89">
-                            <div class="projects__img">
-                                <img src="images/projects_4.png" alt="">
-                            </div>
-                            <div class="projects__caption">Prengi</div>
-                        </li>
-                        <li class="projects__item dark_green" data-slider-class=".lystva" data-color="#587948">
-                            <div class="projects__img">
-                                <img src="images/projects_5.png" alt="">
-                            </div>
-                            <div class="projects__caption">Lystva</div>
-                        </li>
-                        <li class="projects__item orange" data-slider-class=".hutko" data-color="#FA990E">
-                            <div class="projects__img">
-                                <img src="images/projects_6.png" alt="">
-                            </div>
-                            <div class="projects__caption">Hutko</div>
-                        </li>
-                        <li class="projects__item blue" data-slider-class=".reworker" data-color="#0B5B76">
-                            <div class="projects__img">
-                                <img src="images/projects_7.png" alt="">
-                            </div>
-                            <div class="projects__caption">Reworker</div>
-                        </li>
-                        <li class="projects__item light_green" data-slider-class=".see-guru" data-color="#1AA6B7">
-                            <div class="projects__img">
-                                <img src="images/projects_8.png" alt="">
-                            </div>
-                            <div class="projects__caption">See.Guru</div>
-                        </li>
-                        <li class="projects__item silver" data-slider-class=".fish-tools" data-color="#88A3AE">
-                            <div class="projects__img">
-                                <img src="images/projects_9.png" alt="">
-                            </div>
-                            <div class="projects__caption">FishTools</div>
-                        </li>
-                    </ul>
-                </div>
-                <div class="projects__content">
-                    <ul class="projects-all">
-                        <li class="project active tripline">
-                            <ul class="project__slider">
-                                <li class="project__slide"><img src="images/tripline_1.png" alt=""></li>
-                                <li class="project__slide"><img src="images/tripline_2.png" alt=""></li>
-                                <li class="project__slide"><img src="images/tripline_3.png" alt=""></li>
-                                <li class="project__slide"><img src="images/tripline_4.png" alt=""></li>
-                                <li class="project__slide"><img src="images/tripline_5.png" alt=""></li>
-                                <li class="project__slide"><img src="images/tripline_6.png" alt=""></li>
-                            </ul>
-                            <ul class="project__pagination">
-                                <li class="project__item"></li>
-                                <li class="project__item"></li>
-                                <li class="project__item"></li>
-                                <li class="project__item"></li>
-                                <li class="project__item"></li>
-                                <li class="project__item"></li>
-                            </ul>
-                            <a href="" class="project__link active big-link"><span>Full case <img src="images/arrow-top-left-silver.svg" alt=""></span></a>
-                        </li>
-                        <li class="project urbanist">
-                            <ul class="project__slider">
-                                <li class="project__slide"><img src="images/urbanist_1.png" alt=""></li>
-                                <li class="project__slide"><img src="images/urbanist_2.png" alt=""></li>
-                                <li class="project__slide"><img src="images/urbanist_3.png" alt=""></li>
-                                <li class="project__slide"><img src="images/urbanist_4.png" alt=""></li>
-                                <li class="project__slide"><img src="images/urbanist_5.png" alt=""></li>
-                                <li class="project__slide"><img src="images/urbanist_6.png" alt=""></li>
-                            </ul>
-                            <ul class="project__pagination">
-                                <li class="project__item"></li>
-                                <li class="project__item"></li>
-                                <li class="project__item"></li>
-                                <li class="project__item"></li>
-                                <li class="project__item"></li>
-                                <li class="project__item"></li>
-                            </ul>
-                            <a href="" class="project__link big-link"><span>Full case <img src="images/arrow-top-left-silver.svg" alt=""></span></a>
-                        </li>
-                        <li class="project zakhyst">
-                            <ul class="project__slider">
-                                <li class="project__slide"><img src="images/zachist_1.png" alt=""></li>
-                                <li class="project__slide"><img src="images/zachist_2.png" alt=""></li>
-                                <li class="project__slide"><img src="images/zachist_3.png" alt=""></li>
-                                <li class="project__slide"><img src="images/zachist_4.png" alt=""></li>
-                                <li class="project__slide"><img src="images/zachist_5.png" alt=""></li>
-                                <li class="project__slide"><img src="images/zachist_6.png" alt=""></li>
-                            </ul>
-                            <ul class="project__pagination">
-                                <li class="project__item"></li>
-                                <li class="project__item"></li>
-                                <li class="project__item"></li>
-                                <li class="project__item"></li>
-                                <li class="project__item"></li>
-                                <li class="project__item"></li>
-                            </ul>
-                            <a href="" class="project__link big-link"><span>Full case <img src="images/arrow-top-left-silver.svg" alt=""></span></a>
-                        </li>
-                        <li class="project prengi">
-                            <ul class="project__slider">
-                                <li class="project__slide"><img src="images/prengy_1.png" alt=""></li>
-                                <li class="project__slide"><img src="images/prengy_2.png" alt=""></li>
-                                <li class="project__slide"><img src="images/prengy_3.png" alt=""></li>
-                                <li class="project__slide"><img src="images/prengy_4.png" alt=""></li>
-                                <li class="project__slide"><img src="images/prengy_5.png" alt=""></li>
-                                <li class="project__slide"><img src="images/prengy_6.png" alt=""></li>
-                            </ul>
-                            <ul class="project__pagination">
-                                <li class="project__item"></li>
-                                <li class="project__item"></li>
-                                <li class="project__item"></li>
-                                <li class="project__item"></li>
-                                <li class="project__item"></li>
-                                <li class="project__item"></li>
-                            </ul>
-                            <a href="" class="project__link big-link"><span>Full case <img src="images/arrow-top-left-silver.svg" alt=""></span></a>
-                        </li>
-                        <li class="project lystva">
-                            <ul class="project__slider">
-                                <li class="project__slide"><img src="images/lystva_1.png" alt=""></li>
-                                <li class="project__slide"><img src="images/lystva_2.png" alt=""></li>
-                                <li class="project__slide"><img src="images/lystva_3.png" alt=""></li>
-                                <li class="project__slide"><img src="images/lystva_4.png" alt=""></li>
-                                <li class="project__slide"><img src="images/lystva_5.png" alt=""></li>
-                                <li class="project__slide"><img src="images/lystva_6.png" alt=""></li>
-                            </ul>
-                            <ul class="project__pagination">
-                                <li class="project__item"></li>
-                                <li class="project__item"></li>
-                                <li class="project__item"></li>
-                                <li class="project__item"></li>
-                                <li class="project__item"></li>
-                                <li class="project__item"></li>
-                            </ul>
-                            <a href="" class="project__link big-link"><span>Full case <img src="images/arrow-top-left-silver.svg" alt=""></span></a>
-                        </li>
-                        <li class="project hutko">
-                            <ul class="project__slider">
-                                <li class="project__slide"><img src="images/hutko_1.png" alt=""></li>
-                                <li class="project__slide"><img src="images/hutko_2.png" alt=""></li>
-                                <li class="project__slide"><img src="images/hutko_3.png" alt=""></li>
-                                <li class="project__slide"><img src="images/hutko_4.png" alt=""></li>
-                                <li class="project__slide"><img src="images/hutko_5.png" alt=""></li>
-                                <li class="project__slide"><img src="images/hutko_6.png" alt=""></li>
-                            </ul>
-                            <ul class="project__pagination">
-                                <li class="project__item"></li>
-                                <li class="project__item"></li>
-                                <li class="project__item"></li>
-                                <li class="project__item"></li>
-                                <li class="project__item"></li>
-                                <li class="project__item"></li>
-                            </ul>
-                            <a href="" class="project__link big-link"><span>Full case <img src="images/arrow-top-left-silver.svg" alt=""></span></a>
-                        </li>
-                        <li class="project reworker">
-                            <ul class="project__slider">
-                                <li class="project__slide"><img src="images/reworker_1.png" alt=""></li>
-                                <li class="project__slide"><img src="images/reworker_2.png" alt=""></li>
-                                <li class="project__slide"><img src="images/reworker_3.png" alt=""></li>
-                                <li class="project__slide"><img src="images/reworker_4.png" alt=""></li>
-                                <li class="project__slide"><img src="images/reworker_5.png" alt=""></li>
-                                <li class="project__slide"><img src="images/reworker_6.png" alt=""></li>
-                            </ul>
-                            <ul class="project__pagination">
-                                <li class="project__item"></li>
-                                <li class="project__item"></li>
-                                <li class="project__item"></li>
-                                <li class="project__item"></li>
-                                <li class="project__item"></li>
-                                <li class="project__item"></li>
-                            </ul>
-                            <a href="" class="project__link big-link"><span>Full case <img src="images/arrow-top-left-silver.svg" alt=""></span></a>
-                        </li>
-                        <li class="project see-guru">
-                            <ul class="project__slider">
-                                <li class="project__slide"><img src="images/see-guru_1.png" alt=""></li>
-                                <li class="project__slide"><img src="images/see-guru_2.png" alt=""></li>
-                                <li class="project__slide"><img src="images/see-guru_3.png" alt=""></li>
-                                <li class="project__slide"><img src="images/see-guru_4.png" alt=""></li>
-                                <li class="project__slide"><img src="images/see-guru_5.png" alt=""></li>
-                                <li class="project__slide"><img src="images/see-guru_6.png" alt=""></li>
-                            </ul>
-                            <ul class="project__pagination">
-                                <li class="project__item"></li>
-                                <li class="project__item"></li>
-                                <li class="project__item"></li>
-                                <li class="project__item"></li>
-                                <li class="project__item"></li>
-                                <li class="project__item"></li>
-                            </ul>
-                            <a href="" class="project__link big-link"><span>Full case <img src="images/arrow-top-left-silver.svg" alt=""></span></a>
-                        </li>
-                        <li class="project fish-tools">
-                            <ul class="project__slider">
-                                <li class="project__slide"><img src="images/fish-tools_1.png" alt=""></li>
-                                <li class="project__slide"><img src="images/fish-tools_2.png" alt=""></li>
-                                <li class="project__slide"><img src="images/fish-tools_3.png" alt=""></li>
-                                <li class="project__slide"><img src="images/fish-tools_4.png" alt=""></li>
-                                <li class="project__slide"><img src="images/fish-tools_5.png" alt=""></li>
-                                <li class="project__slide"><img src="images/fish-tools_6.png" alt=""></li>
-                            </ul>
-                            <ul class="project__pagination">
-                                <li class="project__item"></li>
-                                <li class="project__item"></li>
-                                <li class="project__item"></li>
-                                <li class="project__item"></li>
-                                <li class="project__item"></li>
-                                <li class="project__item"></li>
-                            </ul>
-                            <a href="" class="project__link big-link"><span>Full case <img src="images/arrow-top-left-silver.svg" alt=""></span></a>
-                        </li>
-                    </ul>
-                </div>
+          <div class="projects__content-bg"></div>
+          <video autoplay muted loop class="project__swither-bg">
+            <source src="video/case_block-bg-570.webm" type="video/webm" />
+          </video>
+          <div class="container">
+            <div class="projects__switcher">
+              <div class="projects__heading">
+                <div class="projects__title">Projects</div>
+                <a href="" class="projects__link link">More</a>
+              </div>
+              <ul class="projects__list">
+                <li
+                  class="projects__item light_blue active"
+                  data-slider-class=".tripline"
+                  data-color="#0A84FF"
+                >
+                  <div class="projects__img">
+                    <img src="images/projects_1.png" alt="" />
+                  </div>
+                  <div class="projects__caption">Tripline</div>
+                </li>
+                <li
+                  class="projects__item violet"
+                  data-slider-class=".urbanist"
+                  data-color="#7C37FA"
+                >
+                  <div class="projects__img">
+                    <img src="images/projects_2.png" alt="" />
+                  </div>
+                  <div class="projects__caption">Urbanist</div>
+                </li>
+                <li
+                  class="projects__item dark_violet"
+                  data-slider-class=".zakhyst"
+                  data-color="#170F5D"
+                >
+                  <div class="projects__img">
+                    <img src="images/projects_3.png" alt="" />
+                  </div>
+                  <div class="projects__caption">Zakhyst</div>
+                </li>
+                <li
+                  class="projects__item green"
+                  data-slider-class=".prengi"
+                  data-color="#45AA89"
+                >
+                  <div class="projects__img">
+                    <img src="images/projects_4.png" alt="" />
+                  </div>
+                  <div class="projects__caption">Prengi</div>
+                </li>
+                <li
+                  class="projects__item dark_green"
+                  data-slider-class=".lystva"
+                  data-color="#587948"
+                >
+                  <div class="projects__img">
+                    <img src="images/projects_5.png" alt="" />
+                  </div>
+                  <div class="projects__caption">Lystva</div>
+                </li>
+                <li
+                  class="projects__item orange"
+                  data-slider-class=".hutko"
+                  data-color="#FA990E"
+                >
+                  <div class="projects__img">
+                    <img src="images/projects_6.png" alt="" />
+                  </div>
+                  <div class="projects__caption">Hutko</div>
+                </li>
+                <li
+                  class="projects__item blue"
+                  data-slider-class=".reworker"
+                  data-color="#0B5B76"
+                >
+                  <div class="projects__img">
+                    <img src="images/projects_7.png" alt="" />
+                  </div>
+                  <div class="projects__caption">Reworker</div>
+                </li>
+                <li
+                  class="projects__item light_green"
+                  data-slider-class=".see-guru"
+                  data-color="#1AA6B7"
+                >
+                  <div class="projects__img">
+                    <img src="images/projects_8.png" alt="" />
+                  </div>
+                  <div class="projects__caption">See.Guru</div>
+                </li>
+                <li
+                  class="projects__item silver"
+                  data-slider-class=".fish-tools"
+                  data-color="#88A3AE"
+                >
+                  <div class="projects__img">
+                    <img src="images/projects_9.png" alt="" />
+                  </div>
+                  <div class="projects__caption">FishTools</div>
+                </li>
+              </ul>
             </div>
+            <div class="projects__content">
+              <ul class="projects-all">
+                <li class="project active tripline">
+                  <ul class="project__slider">
+                    <li class="project__slide">
+                      <img src="images/tripline_1.png" alt="" />
+                    </li>
+                    <li class="project__slide">
+                      <img src="images/tripline_2.png" alt="" />
+                    </li>
+                    <li class="project__slide">
+                      <img src="images/tripline_3.png" alt="" />
+                    </li>
+                    <li class="project__slide">
+                      <img src="images/tripline_4.png" alt="" />
+                    </li>
+                    <li class="project__slide">
+                      <img src="images/tripline_5.png" alt="" />
+                    </li>
+                    <li class="project__slide">
+                      <img src="images/tripline_6.png" alt="" />
+                    </li>
+                  </ul>
+                  <ul class="project__pagination">
+                    <li class="project__item"></li>
+                    <li class="project__item"></li>
+                    <li class="project__item"></li>
+                    <li class="project__item"></li>
+                    <li class="project__item"></li>
+                    <li class="project__item"></li>
+                  </ul>
+                  <a href="" class="project__link active big-link"
+                    ><span
+                      >Full case
+                      <img
+                        src="images/arrow-top-left-silver.svg"
+                        alt="" /></span
+                  ></a>
+                </li>
+                <li class="project urbanist">
+                  <ul class="project__slider">
+                    <li class="project__slide">
+                      <img src="images/urbanist_1.png" alt="" />
+                    </li>
+                    <li class="project__slide">
+                      <img src="images/urbanist_2.png" alt="" />
+                    </li>
+                    <li class="project__slide">
+                      <img src="images/urbanist_3.png" alt="" />
+                    </li>
+                    <li class="project__slide">
+                      <img src="images/urbanist_4.png" alt="" />
+                    </li>
+                    <li class="project__slide">
+                      <img src="images/urbanist_5.png" alt="" />
+                    </li>
+                    <li class="project__slide">
+                      <img src="images/urbanist_6.png" alt="" />
+                    </li>
+                  </ul>
+                  <ul class="project__pagination">
+                    <li class="project__item"></li>
+                    <li class="project__item"></li>
+                    <li class="project__item"></li>
+                    <li class="project__item"></li>
+                    <li class="project__item"></li>
+                    <li class="project__item"></li>
+                  </ul>
+                  <a href="" class="project__link big-link"
+                    ><span
+                      >Full case
+                      <img
+                        src="images/arrow-top-left-silver.svg"
+                        alt="" /></span
+                  ></a>
+                </li>
+                <li class="project zakhyst">
+                  <ul class="project__slider">
+                    <li class="project__slide">
+                      <img src="images/zachist_1.png" alt="" />
+                    </li>
+                    <li class="project__slide">
+                      <img src="images/zachist_2.png" alt="" />
+                    </li>
+                    <li class="project__slide">
+                      <img src="images/zachist_3.png" alt="" />
+                    </li>
+                    <li class="project__slide">
+                      <img src="images/zachist_4.png" alt="" />
+                    </li>
+                    <li class="project__slide">
+                      <img src="images/zachist_5.png" alt="" />
+                    </li>
+                    <li class="project__slide">
+                      <img src="images/zachist_6.png" alt="" />
+                    </li>
+                  </ul>
+                  <ul class="project__pagination">
+                    <li class="project__item"></li>
+                    <li class="project__item"></li>
+                    <li class="project__item"></li>
+                    <li class="project__item"></li>
+                    <li class="project__item"></li>
+                    <li class="project__item"></li>
+                  </ul>
+                  <a href="" class="project__link big-link"
+                    ><span
+                      >Full case
+                      <img
+                        src="images/arrow-top-left-silver.svg"
+                        alt="" /></span
+                  ></a>
+                </li>
+                <li class="project prengi">
+                  <ul class="project__slider">
+                    <li class="project__slide">
+                      <img src="images/prengy_1.png" alt="" />
+                    </li>
+                    <li class="project__slide">
+                      <img src="images/prengy_2.png" alt="" />
+                    </li>
+                    <li class="project__slide">
+                      <img src="images/prengy_3.png" alt="" />
+                    </li>
+                    <li class="project__slide">
+                      <img src="images/prengy_4.png" alt="" />
+                    </li>
+                    <li class="project__slide">
+                      <img src="images/prengy_5.png" alt="" />
+                    </li>
+                    <li class="project__slide">
+                      <img src="images/prengy_6.png" alt="" />
+                    </li>
+                  </ul>
+                  <ul class="project__pagination">
+                    <li class="project__item"></li>
+                    <li class="project__item"></li>
+                    <li class="project__item"></li>
+                    <li class="project__item"></li>
+                    <li class="project__item"></li>
+                    <li class="project__item"></li>
+                  </ul>
+                  <a href="" class="project__link big-link"
+                    ><span
+                      >Full case
+                      <img
+                        src="images/arrow-top-left-silver.svg"
+                        alt="" /></span
+                  ></a>
+                </li>
+                <li class="project lystva">
+                  <ul class="project__slider">
+                    <li class="project__slide">
+                      <img src="images/lystva_1.png" alt="" />
+                    </li>
+                    <li class="project__slide">
+                      <img src="images/lystva_2.png" alt="" />
+                    </li>
+                    <li class="project__slide">
+                      <img src="images/lystva_3.png" alt="" />
+                    </li>
+                    <li class="project__slide">
+                      <img src="images/lystva_4.png" alt="" />
+                    </li>
+                    <li class="project__slide">
+                      <img src="images/lystva_5.png" alt="" />
+                    </li>
+                    <li class="project__slide">
+                      <img src="images/lystva_6.png" alt="" />
+                    </li>
+                  </ul>
+                  <ul class="project__pagination">
+                    <li class="project__item"></li>
+                    <li class="project__item"></li>
+                    <li class="project__item"></li>
+                    <li class="project__item"></li>
+                    <li class="project__item"></li>
+                    <li class="project__item"></li>
+                  </ul>
+                  <a href="" class="project__link big-link"
+                    ><span
+                      >Full case
+                      <img
+                        src="images/arrow-top-left-silver.svg"
+                        alt="" /></span
+                  ></a>
+                </li>
+                <li class="project hutko">
+                  <ul class="project__slider">
+                    <li class="project__slide">
+                      <img src="images/hutko_1.png" alt="" />
+                    </li>
+                    <li class="project__slide">
+                      <img src="images/hutko_2.png" alt="" />
+                    </li>
+                    <li class="project__slide">
+                      <img src="images/hutko_3.png" alt="" />
+                    </li>
+                    <li class="project__slide">
+                      <img src="images/hutko_4.png" alt="" />
+                    </li>
+                    <li class="project__slide">
+                      <img src="images/hutko_5.png" alt="" />
+                    </li>
+                    <li class="project__slide">
+                      <img src="images/hutko_6.png" alt="" />
+                    </li>
+                  </ul>
+                  <ul class="project__pagination">
+                    <li class="project__item"></li>
+                    <li class="project__item"></li>
+                    <li class="project__item"></li>
+                    <li class="project__item"></li>
+                    <li class="project__item"></li>
+                    <li class="project__item"></li>
+                  </ul>
+                  <a href="" class="project__link big-link"
+                    ><span
+                      >Full case
+                      <img
+                        src="images/arrow-top-left-silver.svg"
+                        alt="" /></span
+                  ></a>
+                </li>
+                <li class="project reworker">
+                  <ul class="project__slider">
+                    <li class="project__slide">
+                      <img src="images/reworker_1.png" alt="" />
+                    </li>
+                    <li class="project__slide">
+                      <img src="images/reworker_2.png" alt="" />
+                    </li>
+                    <li class="project__slide">
+                      <img src="images/reworker_3.png" alt="" />
+                    </li>
+                    <li class="project__slide">
+                      <img src="images/reworker_4.png" alt="" />
+                    </li>
+                    <li class="project__slide">
+                      <img src="images/reworker_5.png" alt="" />
+                    </li>
+                    <li class="project__slide">
+                      <img src="images/reworker_6.png" alt="" />
+                    </li>
+                  </ul>
+                  <ul class="project__pagination">
+                    <li class="project__item"></li>
+                    <li class="project__item"></li>
+                    <li class="project__item"></li>
+                    <li class="project__item"></li>
+                    <li class="project__item"></li>
+                    <li class="project__item"></li>
+                  </ul>
+                  <a href="" class="project__link big-link"
+                    ><span
+                      >Full case
+                      <img
+                        src="images/arrow-top-left-silver.svg"
+                        alt="" /></span
+                  ></a>
+                </li>
+                <li class="project see-guru">
+                  <ul class="project__slider">
+                    <li class="project__slide">
+                      <img src="images/see-guru_1.png" alt="" />
+                    </li>
+                    <li class="project__slide">
+                      <img src="images/see-guru_2.png" alt="" />
+                    </li>
+                    <li class="project__slide">
+                      <img src="images/see-guru_3.png" alt="" />
+                    </li>
+                    <li class="project__slide">
+                      <img src="images/see-guru_4.png" alt="" />
+                    </li>
+                    <li class="project__slide">
+                      <img src="images/see-guru_5.png" alt="" />
+                    </li>
+                    <li class="project__slide">
+                      <img src="images/see-guru_6.png" alt="" />
+                    </li>
+                  </ul>
+                  <ul class="project__pagination">
+                    <li class="project__item"></li>
+                    <li class="project__item"></li>
+                    <li class="project__item"></li>
+                    <li class="project__item"></li>
+                    <li class="project__item"></li>
+                    <li class="project__item"></li>
+                  </ul>
+                  <a href="" class="project__link big-link"
+                    ><span
+                      >Full case
+                      <img
+                        src="images/arrow-top-left-silver.svg"
+                        alt="" /></span
+                  ></a>
+                </li>
+                <li class="project fish-tools">
+                  <ul class="project__slider">
+                    <li class="project__slide">
+                      <img src="images/fish-tools_1.png" alt="" />
+                    </li>
+                    <li class="project__slide">
+                      <img src="images/fish-tools_2.png" alt="" />
+                    </li>
+                    <li class="project__slide">
+                      <img src="images/fish-tools_3.png" alt="" />
+                    </li>
+                    <li class="project__slide">
+                      <img src="images/fish-tools_4.png" alt="" />
+                    </li>
+                    <li class="project__slide">
+                      <img src="images/fish-tools_5.png" alt="" />
+                    </li>
+                    <li class="project__slide">
+                      <img src="images/fish-tools_6.png" alt="" />
+                    </li>
+                  </ul>
+                  <ul class="project__pagination">
+                    <li class="project__item"></li>
+                    <li class="project__item"></li>
+                    <li class="project__item"></li>
+                    <li class="project__item"></li>
+                    <li class="project__item"></li>
+                    <li class="project__item"></li>
+                  </ul>
+                  <a href="" class="project__link big-link"
+                    ><span
+                      >Full case
+                      <img
+                        src="images/arrow-top-left-silver.svg"
+                        alt="" /></span
+                  ></a>
+                </li>
+              </ul>
+            </div>
+          </div>
         </article>
         <article class="clients">
-            <h2 class="clients__title title--blue">Clients</h2>
-            <div class="clients__desc">Companies and startups that have entrusted us with their ideas.</div>
-            <ul class="clients__list" id="clients" data-relative-input="true">
-                <li class="clients__item" data-depth='0.5'>
-                    <div class="clients__img-wrap">
-                        <img src="images/projects_5.png" alt="" class="clients__img">
-                    </div>
-                    <div class="clients-popup">
-                        <div class="clients-popup__title">Lorem Ipsum</div>
-                        <div class="clients-popup__desc">We develop popular websites and applications</div>
-                    </div>
-                </li>
-                <li class="clients__item" data-depth='0.7'>
-                    <div class="clients__img-wrap">
-                        <img src="images/clients_1.png" alt="" class="clients__img">
-                    </div>
-                    <div class="clients-popup">
-                        <div class="clients-popup__title">Lorem Ipsum</div>
-                        <div class="clients-popup__desc">We develop popular websites and applications</div>
-                    </div>
-                </li>
-                <li class="clients__item left" data-depth='0.9'>
-                    <div class="clients__img-wrap">
-                        <img src="images/clients_2.png" alt="" class="clients__img">
-                    </div>
-                    <div class="clients-popup">
-                        <div class="clients-popup__title">Lorem Ipsum</div>
-                        <div class="clients-popup__desc">We develop popular websites and applications</div>
-                    </div>
-                </li>
-                <li class="clients__item" data-depth='0.11'>
-                    <div class="clients__img-wrap">
-                        <img src="images/clients_3.png" alt="" class="clients__img">
-                    </div>
-                    <div class="clients-popup">
-                        <div class="clients-popup__title">Lorem Ipsum</div>
-                        <div class="clients-popup__desc">We develop popular websites and applications</div>
-                    </div>
-                </li>
-                <li class="clients__item" data-depth='0.13'>
-                    <div class="clients__img-wrap">
-                        <img src="images/clients_4.png" alt="" class="clients__img">
-                    </div>
-                    <div class="clients-popup">
-                        <div class="clients-popup__title">Lorem Ipsum</div>
-                        <div class="clients-popup__desc">We develop popular websites and applications</div>
-                    </div>
-                </li>
-                <li class="clients__item left"  data-depth='0.11'>
-                    <div class="clients__img-wrap">
-                        <img src="images/clients_5.png" alt="" class="clients__img">
-                    </div>
-                    <div class="clients-popup">
-                        <div class="clients-popup__title">Lorem Ipsum</div>
-                        <div class="clients-popup__desc">We develop popular websites and applications</div>
-                    </div>
-                </li>
-                <li class="clients__item left" data-depth='0.9'>
-                    <div class="clients__img-wrap">
-                        <img src="images/clients_6.png" alt="" class="clients__img">
-                    </div>
-                    <div class="clients-popup">
-                        <div class="clients-popup__title">Lorem Ipsum</div>
-                        <div class="clients-popup__desc">We develop popular websites and applications</div>
-                    </div>
-                </li>
-                <li class="clients__item left" data-depth='0.7'>
-                    <div class="clients__img-wrap">
-                        <img src="images/clients_7.png" alt="" class="clients__img">
-                    </div>
-                    <div class="clients-popup">
-                        <div class="clients-popup__title">Lorem Ipsum</div>
-                        <div class="clients-popup__desc">We develop popular websites and applications</div>
-                    </div>
-                </li>
-                <li class="clients__item left" data-depth='0.5'  >
-                    <div class="clients__img-wrap">
-                        <img src="images/clients_8.png" alt="" class="clients__img">
-                    </div>
-                    <div class="clients-popup">
-                        <div class="clients-popup__title">Lorem Ipsum</div>
-                        <div class="clients-popup__desc">We develop popular websites and applications</div>
-                    </div>
-                </li>
-            </ul>
+          <h2 class="clients__title title--blue">Clients</h2>
+          <div class="clients__desc">
+            Companies and startups that have entrusted us with their ideas.
+          </div>
+          <ul class="clients__list" id="clients" data-relative-input="true">
+            <li class="clients__item" data-depth="0.5">
+              <div class="clients__img-wrap">
+                <img src="images/projects_5.png" alt="" class="clients__img" />
+              </div>
+              <div class="clients-popup">
+                <div class="clients-popup__title">Lorem Ipsum</div>
+                <div class="clients-popup__desc">
+                  We develop popular websites and applications
+                </div>
+              </div>
+            </li>
+            <li class="clients__item" data-depth="0.7">
+              <div class="clients__img-wrap">
+                <img src="images/clients_1.png" alt="" class="clients__img" />
+              </div>
+              <div class="clients-popup">
+                <div class="clients-popup__title">Lorem Ipsum</div>
+                <div class="clients-popup__desc">
+                  We develop popular websites and applications
+                </div>
+              </div>
+            </li>
+            <li class="clients__item left" data-depth="0.9">
+              <div class="clients__img-wrap">
+                <img src="images/clients_2.png" alt="" class="clients__img" />
+              </div>
+              <div class="clients-popup">
+                <div class="clients-popup__title">Lorem Ipsum</div>
+                <div class="clients-popup__desc">
+                  We develop popular websites and applications
+                </div>
+              </div>
+            </li>
+            <li class="clients__item" data-depth="0.11">
+              <div class="clients__img-wrap">
+                <img src="images/clients_3.png" alt="" class="clients__img" />
+              </div>
+              <div class="clients-popup">
+                <div class="clients-popup__title">Lorem Ipsum</div>
+                <div class="clients-popup__desc">
+                  We develop popular websites and applications
+                </div>
+              </div>
+            </li>
+            <li class="clients__item" data-depth="0.13">
+              <div class="clients__img-wrap">
+                <img src="images/clients_4.png" alt="" class="clients__img" />
+              </div>
+              <div class="clients-popup">
+                <div class="clients-popup__title">Lorem Ipsum</div>
+                <div class="clients-popup__desc">
+                  We develop popular websites and applications
+                </div>
+              </div>
+            </li>
+            <li class="clients__item left" data-depth="0.11">
+              <div class="clients__img-wrap">
+                <img src="images/clients_5.png" alt="" class="clients__img" />
+              </div>
+              <div class="clients-popup">
+                <div class="clients-popup__title">Lorem Ipsum</div>
+                <div class="clients-popup__desc">
+                  We develop popular websites and applications
+                </div>
+              </div>
+            </li>
+            <li class="clients__item left" data-depth="0.9">
+              <div class="clients__img-wrap">
+                <img src="images/clients_6.png" alt="" class="clients__img" />
+              </div>
+              <div class="clients-popup">
+                <div class="clients-popup__title">Lorem Ipsum</div>
+                <div class="clients-popup__desc">
+                  We develop popular websites and applications
+                </div>
+              </div>
+            </li>
+            <li class="clients__item left" data-depth="0.7">
+              <div class="clients__img-wrap">
+                <img src="images/clients_7.png" alt="" class="clients__img" />
+              </div>
+              <div class="clients-popup">
+                <div class="clients-popup__title">Lorem Ipsum</div>
+                <div class="clients-popup__desc">
+                  We develop popular websites and applications
+                </div>
+              </div>
+            </li>
+            <li class="clients__item left" data-depth="0.5">
+              <div class="clients__img-wrap">
+                <img src="images/clients_8.png" alt="" class="clients__img" />
+              </div>
+              <div class="clients-popup">
+                <div class="clients-popup__title">Lorem Ipsum</div>
+                <div class="clients-popup__desc">
+                  We develop popular websites and applications
+                </div>
+              </div>
+            </li>
+          </ul>
+          <ul class="clients__list tablet">
+            <li class="clients__item">
+              <img src="images/projects_5.png" alt="" class="clients__img" />
+            </li>
+            <li class="clients__item">
+              <img src="images/clients_1.png" alt="" class="clients__img" />
+            </li>
+            <li class="clients__item">
+              <img src="images/clients_2.png" alt="" class="clients__img" />
+            </li>
+            <li class="clients__item">
+              <img src="images/clients_3.png" alt="" class="clients__img" />
+            </li>
+            <li class="clients__item">
+              <img src="images/clients_4.png" alt="" class="clients__img" />
+            </li>
+            <li class="clients__item">
+              <img src="images/clients_5.png" alt="" class="clients__img" />
+            </li>
+            <li class="clients__item">
+              <img src="images/clients_6.png" alt="" class="clients__img" />
+            </li>
+            <li class="clients__item">
+              <img src="images/clients_7.png" alt="" class="clients__img" />
+            </li>
+            <li class="clients__item">
+              <img src="images/clients_8.png" alt="" class="clients__img" />
+            </li>
+          </ul>
         </article>
         <article class="faq">
-            <img src="images/overview_bg.png" alt="" class="faq__bg">
-            <div class="container">
-                <div class="faq__head">
-                    <h3 class="faq__title">Have questions?</h3>
-                    <div class="faq__desc">We will be happy to answer all your questions and find the best solution.</div>
-                </div>
-                <ul class="faq__list">
-                    <li class="faq__item open">
-                        <div class="faq__heading">
-                            <div class="faq__caption">What is the cost of developing a mobile app?</div>
-                            <img src="images/faq_arrow.svg" alt="" class="faq__icon">
-                        </div>
-                        <div class="faq__content">The cost of development depends on the complexity of the functionality and the operating system for which the app will be developed: iOS or Android. In order to calculate the price, we need to determine the main task of the app, think over its logic and functionality. Next, we can prepare an estimate.</div>
-                    </li>
-                    <li class="faq__item">
-                        <div class="faq__heading">
-                            <div class="faq__caption">Which companies need mobile app?</div>
-                            <img src="images/faq_arrow.svg" alt="" class="faq__icon">
-                        </div>
-                        <div class="faq__content">The cost of development depends on the complexity of the functionality and the operating system for which the app will be developed: iOS or Android. In order to calculate the price, we need to determine the main task of the app, think over its logic and functionality. Next, we can prepare an estimate.</div>
-                    </li>
-                    <li class="faq__item">
-                        <div class="faq__heading">
-                            <div class="faq__caption">How long will development take?</div>
-                            <img src="images/faq_arrow.svg" alt="" class="faq__icon">
-                        </div>
-                        <div class="faq__content">The cost of development depends on the complexity of the functionality and the operating system for which the app will be developed: iOS or Android. In order to calculate the price, we need to determine the main task of the app, think over its logic and functionality. Next, we can prepare an estimate.</div>
-                    </li>
-                    <li class="faq__item">
-                        <div class="faq__heading">
-                            <div class="faq__caption">The project is ready, what to do next?</div>
-                            <img src="images/faq_arrow.svg" alt="" class="faq__icon">
-                        </div>
-                        <div class="faq__content">The cost of development depends on the complexity of the functionality and the operating system for which the app will be developed: iOS or Android. In order to calculate the price, we need to determine the main task of the app, think over its logic and functionality. Next, we can prepare an estimate.</div>
-                    </li>
-                </ul>
+          <img src="images/overview_bg.png" alt="" class="faq__bg" />
+          <div class="container">
+            <div class="faq__head">
+              <h3 class="faq__title">Have questions?</h3>
+              <div class="faq__desc">
+                We will be happy to answer all your questions and find the best
+                solution.
+              </div>
             </div>
+            <ul class="faq__list">
+              <li class="faq__item open">
+                <div class="faq__heading">
+                  <div class="faq__caption">
+                    What is the cost of developing a mobile app?
+                  </div>
+                  <img src="images/faq_arrow.svg" alt="" class="faq__icon" />
+                </div>
+                <div class="faq__content">
+                  The cost of development depends on the complexity of the
+                  functionality and the operating system for which the app will
+                  be developed: iOS or Android. In order to calculate the price,
+                  we need to determine the main task of the app, think over its
+                  logic and functionality. Next, we can prepare an estimate.
+                </div>
+              </li>
+              <li class="faq__item">
+                <div class="faq__heading">
+                  <div class="faq__caption">
+                    Which companies need mobile app?
+                  </div>
+                  <img src="images/faq_arrow.svg" alt="" class="faq__icon" />
+                </div>
+                <div class="faq__content">
+                  The cost of development depends on the complexity of the
+                  functionality and the operating system for which the app will
+                  be developed: iOS or Android. In order to calculate the price,
+                  we need to determine the main task of the app, think over its
+                  logic and functionality. Next, we can prepare an estimate.
+                </div>
+              </li>
+              <li class="faq__item">
+                <div class="faq__heading">
+                  <div class="faq__caption">
+                    How long will development take?
+                  </div>
+                  <img src="images/faq_arrow.svg" alt="" class="faq__icon" />
+                </div>
+                <div class="faq__content">
+                  The cost of development depends on the complexity of the
+                  functionality and the operating system for which the app will
+                  be developed: iOS or Android. In order to calculate the price,
+                  we need to determine the main task of the app, think over its
+                  logic and functionality. Next, we can prepare an estimate.
+                </div>
+              </li>
+              <li class="faq__item">
+                <div class="faq__heading">
+                  <div class="faq__caption">
+                    The project is ready, what to do next?
+                  </div>
+                  <img src="images/faq_arrow.svg" alt="" class="faq__icon" />
+                </div>
+                <div class="faq__content">
+                  The cost of development depends on the complexity of the
+                  functionality and the operating system for which the app will
+                  be developed: iOS or Android. In order to calculate the price,
+                  we need to determine the main task of the app, think over its
+                  logic and functionality. Next, we can prepare an estimate.
+                </div>
+              </li>
+            </ul>
+          </div>
         </article>
         <article class="contact-us">
-            <video autoplay muted loop class="contact-us__bg large-screen">
-                <source src="video/contacts-block_bg-2560.webm" type="video/webm">
-            </video>
-            <video autoplay muted loop class="contact-us__bg middle-screen">
-                <source src="video/contacts-block_bg-1440.webm" type="video/webm">
-            </video>
-            <video autoplay muted loop class="contact-us__bg small-screen">
-                <source src="video/contacts-block_bg-768.webm" type="video/webm">
-            </video>
+          <video autoplay muted loop class="contact-us__bg large-screen">
+            <source src="video/contacts-block_bg-2560.webm" type="video/webm" />
+          </video>
+          <video autoplay muted loop class="contact-us__bg middle-screen">
+            <source src="video/contacts-block_bg-1440.webm" type="video/webm" />
+          </video>
+          <video autoplay muted loop class="contact-us__bg small-screen">
+            <source src="video/contacts-block_bg-768.webm" type="video/webm" />
+          </video>
 
-            <div class="contact-us__heading contact-us__tablet">
-                <h3 class="contact-us__caption title--blue">Contact us!</h3>
-                <div class="contact-us__description">Let's figure out how to create an effective application, its cost and development time.</div>
+          <div class="contact-us__heading contact-us__tablet">
+            <h3 class="contact-us__caption title--blue">Contact us!</h3>
+            <div class="contact-us__description">
+              Let's figure out how to create an effective application, its cost
+              and development time.
             </div>
+          </div>
 
-            <h3 class="contact-us__title">Contact us!</h3>
+          <h3 class="contact-us__title">Contact us!</h3>
 
-            <div class="contact-us__btn-wrap">
-                <button class="contact-us__btn">
-                    <img src="images/contact-us_btn-img.svg" alt="">
-                    <span>Let’s do it together</span>
-                </button>
-                <div class="contact-us__desc">
-                    <img src="images/contact-us_arrow.svg" alt="">
-                    <span>Here can be your app</span>
-                </div>
+          <div class="contact-us__btn-wrap">
+            <button class="contact-us__btn">
+              <img src="images/contact-us_btn-img.svg" alt="" />
+              <span>Let’s do it together</span>
+            </button>
+            <div class="contact-us__desc">
+              <img src="images/contact-us_arrow.svg" alt="" />
+              <span>Here can be your app</span>
             </div>
+          </div>
         </article>
-    </main>
-</div>
+      </main>
+    </div>
 
-<footer id="footer" class="footer">
-    <div class="container footer__content">
+    <footer id="footer" class="footer">
+      <div class="container footer__content">
         <div class="footer__block">
-            <div class="footer__heading">Let`s create your app together!</div>
-            <a href="mailto:hello@dodotap.com" class="footer__email">hello@dodotap.com</a>
-            <div class="footer__phones">
-                <a href="tel:0674445566" class="footer__phone link-underline-animation">+38 (067) 444 55 66</a>
-                <a href="tel:0674445566" class="footer__phone link-underline-animation">+38 (067) 444 55 66</a>
-            </div>
-            <ul class="footer__nav">
-                <li class="footer__item"><a href="" class="footer__link link-underline-animation">Home</a></li>
-                <li class="footer__item"><a href="" class="footer__link link-underline-animation">Company</a></li>
-                <li class="footer__item"><a href="" class="footer__link link-underline-animation">Services</a></li>
-                <li class="footer__item"><a href="" class="footer__link link-underline-animation">Cases</a></li>
-                <li class="footer__item"><a href="" class="footer__link link-underline-animation">Contact</a></li>
-            </ul>
-            <ul class="main-menu__languages footer__languages">
-                <li class="main-menu__slider"></li>
-                <li class="main-menu__language"><a href="">EN</a></li>
-                <li class="main-menu__language"><a href="">UK</a></li>
-                <li class="main-menu__language"><a href="">RU</a></li>
-            </ul>
-            <ul class="intro__socials footer__socials">
-                <li class="intro__social"><a href="" class="intro__link">Instagram</a></li>
-                <li class="intro__social"><a href="" class="intro__link">Behance</a></li>
-                <li class="intro__social"><a href="" class="intro__link">Linkedin</a></li>
-            </ul>
+          <div class="footer__heading">Let`s create your app together!</div>
+          <a href="mailto:hello@dodotap.com" class="footer__email"
+            >hello@dodotap.com</a
+          >
+          <div class="footer__phones">
+            <a
+              href="tel:0674445566"
+              class="footer__phone link-underline-animation"
+              >+38 (067) 444 55 66</a
+            >
+            <a
+              href="tel:0674445566"
+              class="footer__phone link-underline-animation"
+              >+38 (067) 444 55 66</a
+            >
+          </div>
+          <ul class="footer__nav">
+            <li class="footer__item">
+              <a href="" class="footer__link link-underline-animation">Home</a>
+            </li>
+            <li class="footer__item">
+              <a href="" class="footer__link link-underline-animation"
+                >Company</a
+              >
+            </li>
+            <li class="footer__item">
+              <a href="" class="footer__link link-underline-animation"
+                >Services</a
+              >
+            </li>
+            <li class="footer__item">
+              <a href="" class="footer__link link-underline-animation">Cases</a>
+            </li>
+            <li class="footer__item">
+              <a href="" class="footer__link link-underline-animation"
+                >Contact</a
+              >
+            </li>
+          </ul>
+          <ul class="main-menu__languages footer__languages">
+            <li class="main-menu__slider"></li>
+            <li class="main-menu__language"><a href="">EN</a></li>
+            <li class="main-menu__language"><a href="">UK</a></li>
+            <li class="main-menu__language"><a href="">RU</a></li>
+          </ul>
+          <ul class="intro__socials footer__socials">
+            <li class="intro__social">
+              <a href="" class="intro__link">Instagram</a>
+            </li>
+            <li class="intro__social">
+              <a href="" class="intro__link">Behance</a>
+            </li>
+            <li class="intro__social">
+              <a href="" class="intro__link">Linkedin</a>
+            </li>
+          </ul>
         </div>
         <div class="footer__block">
-            <div class="footer__heading">Contact us</div>
-            <form action="" class="footer__contact">
-                <label for="footer-user_name" hidden></label>
-                <input type="text" class="input footer__input" id="footer-user_name" placeholder="Name">
-                <label for="footer-user_phone" hidden></label>
-                <input type="tel" class="input footer__input" id="footer-user_phone" placeholder="+380 (__) ___ __ __">
-                <label for="footer-user_email" hidden></label>
-                <input type="email" class="input footer__input" id="footer-user_email" placeholder="Email">
-                <button class="footer__submit">
-                    Discuss the project
-                    <span class="footer__submit-img">
-                        <img src="images/footer-no-hover.png" alt="">
-                        <span class="footer__submit-hover">
-                            <img src="images/footer-hover.png" alt="">
-                        </span>
-                    </span>
-                </button>
-            </form>
-            <div class="footer__copyright">
-                © 2019. All rights reserved / <a href="">Privacy policy</a>  / <a href="">Cookies policy</a>
+          <div class="footer__heading">Contact us</div>
+          <form action="" class="footer__contact">
+            <label for="footer-user_name" hidden></label>
+            <input
+              type="text"
+              class="input footer__input"
+              id="footer-user_name"
+              placeholder="Name"
+            />
+            <label for="footer-user_phone" hidden></label>
+            <input
+              type="tel"
+              class="input footer__input"
+              id="footer-user_phone"
+              placeholder="+380 (__) ___ __ __"
+            />
+            <label for="footer-user_email" hidden></label>
+            <input
+              type="email"
+              class="input footer__input"
+              id="footer-user_email"
+              placeholder="Email"
+            />
+            <button class="footer__submit">
+              Discuss the project
+              <span class="footer__submit-img">
+                <img src="images/footer-no-hover.png" alt="" />
+                <span class="footer__submit-hover">
+                  <img src="images/footer-hover.png" alt="" />
+                </span>
+              </span>
+            </button>
+          </form>
+          <div class="footer__copyright">
+            © 2019. All rights reserved / <a href="">Privacy policy</a> /
+            <a href="">Cookies policy</a>
+          </div>
+          <div class="footer__top-wrap">
+            <button class="footer__top"></button>
+          </div>
+        </div>
+      </div>
+      <div class="container footer__content footer__tablet">
+        <div class="footer__block">
+          <div class="footer__head">
+            <div class="footer__heading">
+              Let`s create <br />
+              your app together!
             </div>
             <div class="footer__top-wrap">
-                <button class="footer__top"></button>
+              <button class="footer__top"></button>
             </div>
+          </div>
+          <form action="" class="footer__contact">
+            <label for="footer-tablet-user_name" hidden></label>
+            <input
+              type="text"
+              class="input footer__input"
+              id="footer-tablet-user_name"
+              placeholder="Name"
+            />
+            <label for="footer-tablet-user_phone" hidden></label>
+            <input
+              type="tel"
+              class="input footer__input"
+              id="footer-tablet-user_phone"
+              placeholder="+380 (__) ___ __ __"
+            />
+            <label for="footer-tablet-user_email" hidden></label>
+            <input
+              type="email"
+              class="input footer__input"
+              id="footer-tablet-user_email"
+              placeholder="Email"
+            />
+            <button class="footer__submit">
+              Discuss the project
+              <span class="footer__submit-img">
+                <img src="images/footer-no-hover.png" alt="" />
+                <span class="footer__submit-hover">
+                  <img src="images/footer-hover.png" alt="" />
+                </span>
+              </span>
+            </button>
+          </form>
         </div>
-    </div>
-    <div class="container footer__content footer__tablet">
         <div class="footer__block">
-            <div class="footer__head">
-                <div class="footer__heading">Let`s create <br> your app together!</div>
-                <div class="footer__top-wrap">
-                    <button class="footer__top"></button>
-                </div>
+          <div class="footer__navigation">
+            <div class="footer__navigation-block">
+              <div class="footer__navigation-title">Menu</div>
+              <ul class="footer__nav">
+                <li class="footer__item">
+                  <a href="" class="footer__link link-underline-animation"
+                    >Home</a
+                  >
+                </li>
+                <li class="footer__item">
+                  <a href="" class="footer__link link-underline-animation"
+                    >Company</a
+                  >
+                </li>
+                <li class="footer__item">
+                  <a href="" class="footer__link link-underline-animation"
+                    >Services</a
+                  >
+                </li>
+                <li class="footer__item">
+                  <a href="" class="footer__link link-underline-animation"
+                    >Cases</a
+                  >
+                </li>
+                <li class="footer__item">
+                  <a href="" class="footer__link link-underline-animation"
+                    >Contact</a
+                  >
+                </li>
+              </ul>
             </div>
-            <form action="" class="footer__contact">
-                <label for="footer-tablet-user_name" hidden></label>
-                <input type="text" class="input footer__input" id="footer-tablet-user_name" placeholder="Name">
-                <label for="footer-tablet-user_phone" hidden></label>
-                <input type="tel" class="input footer__input" id="footer-tablet-user_phone" placeholder="+380 (__) ___ __ __">
-                <label for="footer-tablet-user_email" hidden></label>
-                <input type="email" class="input footer__input" id="footer-tablet-user_email" placeholder="Email">
-                <button class="footer__submit">
-                    Discuss the project
-                    <span class="footer__submit-img">
-                        <img src="images/footer-no-hover.png" alt="">
-                        <span class="footer__submit-hover">
-                            <img src="images/footer-hover.png" alt="">
-                        </span>
-                    </span>
-                </button>
-            </form>
+            <div class="footer__navigation-block">
+              <div class="footer__navigation-title">Contacts</div>
+              <a
+                href="mailto:hello@dodotap.com"
+                class="footer__navigation-email link-underline-animation"
+                >hello@dodotap.com</a
+              >
+              <div class="footer__phones">
+                <a
+                  href="tel:0674445566"
+                  class="footer__phone link-underline-animation"
+                  >+38 (067) 444 55 66</a
+                >
+                <a
+                  href="tel:0674445566"
+                  class="footer__phone link-underline-animation"
+                  >+38 (067) 444 55 66</a
+                >
+              </div>
+              <ul class="intro__socials footer__socials">
+                <li class="intro__social">
+                  <a href="" class="intro__link"
+                    ><i class="fa-brands fa-instagram"></i
+                  ></a>
+                </li>
+                <li class="intro__social">
+                  <a href="" class="intro__link"
+                    ><i class="fa-brands fa-linkedin"></i
+                  ></a>
+                </li>
+                <li class="intro__social">
+                  <a href="" class="intro__link"
+                    ><i class="fa-brands fa-behance-square"></i
+                  ></a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <ul class="main-menu__languages footer__languages">
+            <li class="main-menu__slider"></li>
+            <li class="main-menu__language"><a href="">EN</a></li>
+            <li class="main-menu__language"><a href="">UK</a></li>
+            <li class="main-menu__language"><a href="">RU</a></li>
+          </ul>
+          <div class="footer__copyright">
+            © 2019. All rights reserved / <a href="">Privacy policy</a> /
+            <a href="">Cookies policy</a>
+          </div>
         </div>
-        <div class="footer__block">
-            <div class="footer__navigation">
-                <div class="footer__navigation-block">
-                    <div class="footer__navigation-title">Menu</div>
-                    <ul class="footer__nav">
-                        <li class="footer__item"><a href="" class="footer__link link-underline-animation">Home</a></li>
-                        <li class="footer__item"><a href="" class="footer__link link-underline-animation">Company</a></li>
-                        <li class="footer__item"><a href="" class="footer__link link-underline-animation">Services</a></li>
-                        <li class="footer__item"><a href="" class="footer__link link-underline-animation">Cases</a></li>
-                        <li class="footer__item"><a href="" class="footer__link link-underline-animation">Contact</a></li>
-                    </ul>
-                </div>
-                <div class="footer__navigation-block">
-                    <div class="footer__navigation-title">Contacts</div>
-                    <a href="mailto:hello@dodotap.com" class="footer__navigation-email link-underline-animation">hello@dodotap.com</a>
-                    <div class="footer__phones">
-                        <a href="tel:0674445566" class="footer__phone link-underline-animation">+38 (067) 444 55 66</a>
-                        <a href="tel:0674445566" class="footer__phone link-underline-animation">+38 (067) 444 55 66</a>
-                    </div>
-                    <ul class="intro__socials footer__socials">
-                        <li class="intro__social"><a href="" class="intro__link"><i class="fa-brands fa-instagram"></i></a></li>
-                        <li class="intro__social"><a href="" class="intro__link"><i class="fa-brands fa-linkedin"></i></a></li>
-                        <li class="intro__social"><a href="" class="intro__link"><i class="fa-brands fa-behance-square"></i></a></li>
-                    </ul>
-                </div>
-            </div>
-            <ul class="main-menu__languages footer__languages">
-                <li class="main-menu__slider"></li>
-                <li class="main-menu__language"><a href="">EN</a></li>
-                <li class="main-menu__language"><a href="">UK</a></li>
-                <li class="main-menu__language"><a href="">RU</a></li>
-            </ul>
-            <div class="footer__copyright">
-                © 2019. All rights reserved / <a href="">Privacy policy</a>  / <a href="">Cookies policy</a>
-            </div>
-        </div>
-    </div>
-</footer>
+      </div>
+    </footer>
 
-<div class="contact-modal modal">
-    <div class="contact-modal__content modal__content">
+    <div class="contact-modal modal">
+      <div class="contact-modal__content modal__content">
         <div class="contact-modal__block modal__block">
-            <div class="contact-modal__heading modal__heading">
-                <h5 class="contact-modal__title modal__title">Contact us!</h5>
-                <div class="contact-modal__desc">Fill out the form and do not forget to attach your resume. We are waiting for you! We are looking for:</div>
+          <div class="contact-modal__heading modal__heading">
+            <h5 class="contact-modal__title modal__title">Contact us!</h5>
+            <div class="contact-modal__desc">
+              Fill out the form and do not forget to attach your resume. We are
+              waiting for you! We are looking for:
             </div>
-            <div class="contact-modal__info">
-                <a href="mailto:hello@dodotap.com" class="footer__email">hello@dodotap.com</a>
-                <div class="footer__phones">
-                    <a href="tel:0674445566" class="footer__phone link-underline-animation">+38 (067) 444 55 66</a>
-                    <a href="tel:0674445566" class="footer__phone link-underline-animation">+38 (067) 444 55 66</a>
-                </div>
+          </div>
+          <div class="contact-modal__info">
+            <a href="mailto:hello@dodotap.com" class="footer__email"
+              >hello@dodotap.com</a
+            >
+            <div class="footer__phones">
+              <a
+                href="tel:0674445566"
+                class="footer__phone link-underline-animation"
+                >+38 (067) 444 55 66</a
+              >
+              <a
+                href="tel:0674445566"
+                class="footer__phone link-underline-animation"
+                >+38 (067) 444 55 66</a
+              >
             </div>
+          </div>
         </div>
         <div class="contact-modal__block modal__block">
-            <form action="" class="contact-modal__form">
-                <label for="contact-user_name" hidden></label>
-                <input type="text" class="contact-modal__input modal__input input" id="contact-user_name" placeholder="Name*">
-                <div class="modal-form__control">
-                    <label for="contact-user_phone" hidden></label>
-                    <input type="tel" class="contact-modal__input modal__input input" id="contact-user_phone" placeholder="+380 (__) ___ __ __*">
-                    <label for="contact-user_email" hidden></label>
-                    <input type="email" class="contact-modal__input modal__input input" id="contact-user_email" placeholder="Email">
-                </div>
-                <label for="contact-user_message" hidden></label>
-                <input type="text" class="contact-modal__input modal__input input" id="contact-user_message" placeholder="Describe your project idea in some words">
+          <form action="" class="contact-modal__form">
+            <label for="contact-user_name" hidden></label>
+            <input
+              type="text"
+              class="contact-modal__input modal__input input"
+              id="contact-user_name"
+              placeholder="Name*"
+            />
+            <div class="modal-form__control">
+              <label for="contact-user_phone" hidden></label>
+              <input
+                type="tel"
+                class="contact-modal__input modal__input input"
+                id="contact-user_phone"
+                placeholder="+380 (__) ___ __ __*"
+              />
+              <label for="contact-user_email" hidden></label>
+              <input
+                type="email"
+                class="contact-modal__input modal__input input"
+                id="contact-user_email"
+                placeholder="Email"
+              />
+            </div>
+            <label for="contact-user_message" hidden></label>
+            <input
+              type="text"
+              class="contact-modal__input modal__input input"
+              id="contact-user_message"
+              placeholder="Describe your project idea in some words"
+            />
 
-                <div class="contact-modal__radios">
-                    <label>
-                        <input type="radio" name="type" id="applications" class="contact-modal__radio" checked>
-                        <label for="applications" class="contact-modal__radios-label"></label>
-                        <span>Applications</span>
-                    </label>
-                    <label>
-                        <input type="radio" name="type" id="web-sites" class="contact-modal__radio">
-                        <label for="web-sites" class="contact-modal__radios-label"></label>
-                        <span>Web sites</span>
-                    </label>
-                    <label>
-                        <input type="radio" name="type" id="outsorsing" class="contact-modal__radio">
-                        <label for="outsorsing" class="contact-modal__radios-label"></label>
-                        <span>Outsorsing</span>
-                    </label>
-                </div>
+            <div class="contact-modal__radios">
+              <label>
+                <input
+                  type="radio"
+                  name="type"
+                  id="applications"
+                  class="contact-modal__radio"
+                  checked
+                />
+                <label
+                  for="applications"
+                  class="contact-modal__radios-label"
+                ></label>
+                <span>Applications</span>
+              </label>
+              <label>
+                <input
+                  type="radio"
+                  name="type"
+                  id="web-sites"
+                  class="contact-modal__radio"
+                />
+                <label
+                  for="web-sites"
+                  class="contact-modal__radios-label"
+                ></label>
+                <span>Web sites</span>
+              </label>
+              <label>
+                <input
+                  type="radio"
+                  name="type"
+                  id="outsorsing"
+                  class="contact-modal__radio"
+                />
+                <label
+                  for="outsorsing"
+                  class="contact-modal__radios-label"
+                ></label>
+                <span>Outsorsing</span>
+              </label>
+            </div>
 
-                <label class="contact-modal__load-wrap modal__load-wrap">
-                    <input type="file" class="contact-modal__load modal__load">
-                    <span>
-                        <svg width="40" height="39" viewBox="0 0 40 39" fill="" xmlns="http://www.w3.org/2000/svg">
-                            <rect x="18.7031" width="3" height="39" rx="1.5" fill="#5196F9"/>
-                            <rect x="39.7031" y="18" width="3" height="39" rx="1.5" transform="rotate(90 39.7031 18)" fill="#5196F9"/>
-                        </svg> Attach technical requirement
-                    </span>
-                </label>
+            <label class="contact-modal__load-wrap modal__load-wrap">
+              <input type="file" class="contact-modal__load modal__load" />
+              <span>
+                <svg
+                  width="40"
+                  height="39"
+                  viewBox="0 0 40 39"
+                  fill=""
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <rect
+                    x="18.7031"
+                    width="3"
+                    height="39"
+                    rx="1.5"
+                    fill="#5196F9"
+                  />
+                  <rect
+                    x="39.7031"
+                    y="18"
+                    width="3"
+                    height="39"
+                    rx="1.5"
+                    transform="rotate(90 39.7031 18)"
+                    fill="#5196F9"
+                  />
+                </svg>
+                Attach technical requirement
+              </span>
+            </label>
 
-                <div class="contact-modal__checkboxes">
-                    <label>
-                        <input type="checkbox" class="contact-modal__checkbox" id="privacy">
-                        <label for="privacy" class="contact-modal__checkboxes-label"></label>
-                        <a href="">I agree with privacy policy</a>
-                    </label>
+            <div class="contact-modal__checkboxes">
+              <label>
+                <input
+                  type="checkbox"
+                  class="contact-modal__checkbox"
+                  id="privacy"
+                />
+                <label
+                  for="privacy"
+                  class="contact-modal__checkboxes-label"
+                ></label>
+                <a href="">I agree with privacy policy</a>
+              </label>
 
-                    <label>
-                        <input type="checkbox" class="contact-modal__checkbox" id="nda">
-                        <label for="nda" class="contact-modal__checkboxes-label"></label>
-                        <a href="">Send me NDA</a>
-                    </label>
-                </div>
+              <label>
+                <input
+                  type="checkbox"
+                  class="contact-modal__checkbox"
+                  id="nda"
+                />
+                <label
+                  for="nda"
+                  class="contact-modal__checkboxes-label"
+                ></label>
+                <a href="">Send me NDA</a>
+              </label>
+            </div>
 
-                <button class="footer__submit contact-modal__submit">
-                    Discuss the project
-                    <span class="footer__submit-img">
-                        <img src="images/404_btn-img.png" alt="">
-                        <span class="footer__submit-hover">
-                            <img src="images/404_btn-hover.png" alt="">
-                        </span>
-                    </span>
-                </button>
-            </form>
+            <button class="footer__submit contact-modal__submit">
+              Discuss the project
+              <span class="footer__submit-img">
+                <img src="images/404_btn-img.png" alt="" />
+                <span class="footer__submit-hover">
+                  <img src="images/404_btn-hover.png" alt="" />
+                </span>
+              </span>
+            </button>
+          </form>
         </div>
-        <button class="contact-modal__close modal__close"><img src="images/close.svg" alt=""></button>
+        <button class="contact-modal__close modal__close">
+          <img src="images/close.svg" alt="" />
+        </button>
+      </div>
+      <div class="contact-modal__shadow modal__shadow"></div>
     </div>
-    <div class="contact-modal__shadow modal__shadow"></div>
-</div>
 
-<script src="https://kit.fontawesome.com/4cfcd34589.js" crossorigin="anonymous"></script>
-<script src="js/stages-slider.js"></script>
-<script src="js/project-slider.js"></script>
-<script src="js/main.js"></script>
-<script src="js/functionInitialBlocks.js"></script>
-<script src="js/mobile.js"></script>
-</body>
+    <script
+      src="https://kit.fontawesome.com/4cfcd34589.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="js/stages-slider.js"></script>
+    <script src="js/project-slider.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/functionInitialBlocks.js"></script>
+    <script src="js/mobile.js"></script>
+  </body>
 </html>

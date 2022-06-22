@@ -4385,6 +4385,52 @@ html {
     opacity: 1;
     pointer-events: initial;
 }
+
+.switherSlider {
+    width: 100%;
+    max-width: 500px;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+    display: none;
+}
+.switherSlider img {
+    width: 100%;
+}
+.switherSlider .swiper-slide {
+    background: linear-gradient(290.36deg, rgba(255, 255, 255, 0.2) 1.51%, rgba(255, 255, 255, 0.1) 74.57%);
+    box-shadow: 10px 20px 40px rgba(0, 0, 0, 0.25);
+    backdrop-filter: blur(150px);
+    border-radius: 30px;
+    padding: 40px 28px;
+}
+.switherSlider .swither__heading {
+    margin-top: 24px;
+    padding-top: 35px;
+    margin-bottom: 20px;
+    border-top: 1px solid rgba(255, 255, 255, 0.25);
+}
+.switherSlider .swiper-slide, .switherSlider .swiper-slide-duplicate {
+    opacity: 0 !important;
+}
+.switherSlider .swiper-slide-active {
+    opacity: 1 !important;
+}
+.swither-pagination {
+    position: relative;
+    top: auto;
+    bottom: 0;
+    margin-top: 39px;
+}
+.swither-pagination .swiper-pagination-bullet {
+    background: rgba(255, 255, 255, 0.4);
+    border-radius: 10px;
+    transition: all .5s;
+}
+.swither-pagination .swiper-pagination-bullet-active {
+    background: #FFFFFF;
+    width: 16px;
+}
 /* \Websites */
 
 
@@ -5723,6 +5769,12 @@ html {
     .project__pagination {
         right: -95px;
     }
+    .swither__btn:nth-of-type(2) {
+        left: -20px;
+    }
+    .swither__btn:nth-of-type(3) {
+        right: -40px;
+    }
 }
 
 @media (max-width: 1315px) {
@@ -5762,6 +5814,23 @@ html {
     }
     .cases__case-wrap {
         height: 700px;
+    }
+    .swither__item .swither__img {
+        width: 700px;
+    }
+    .swither__btn:nth-of-type(2) {
+        left: 0;
+    }
+    .swither__btn:nth-of-type(1) {
+        top: -74px;
+        right: 55px;
+    }
+    .swither__btn:nth-of-type(3) {
+        right: 90px;
+    }
+    .swither__circle {
+        width: 590px;
+        height: 590px;
     }
 }
 
@@ -6548,6 +6617,12 @@ html {
     }
     .services-intro > .container {
         padding-top: 150px;
+    }
+    .swither {
+        display: none;
+    }
+    .switherSlider {
+        display: block;
     }
 }
 
@@ -8174,6 +8249,10 @@ html {
     }
     .faq__icon {
         margin-top: 8px;
+    }
+    .websites {
+        padding-top: 101px;
+        padding-bottom: 92px;
     }
 }
 

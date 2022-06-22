@@ -8046,6 +8046,7 @@ html {
         flex-direction: column;
         align-items: center;
         gap: 40px;
+        transition: opacity .7s;
     }
     .swiper-slide-active .technology__item.technology__item--mobile {
         opacity: 1;
@@ -8095,12 +8096,12 @@ html {
         width: 6px;
         height: 6px;
         background: rgba(45, 103, 238, 0.4);
+        transition: all .5s;
     }
     .technology-pagination .swiper-pagination-bullet-active {
         width: 26px;
         background: #2D67EE;
         border-radius: 4px;
-        transition: all .25s ease-in-out;
     }
     .applications__list {
         gap: 20px;

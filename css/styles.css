@@ -3455,6 +3455,7 @@ html {
 
 .stages__img {
     width: 55%;
+    object-fit: contain;
 }
 
 .stages__content {
@@ -5758,6 +5759,12 @@ html {
     .project.initial .project__pagination {
         right: -25px;
     }
+    .cooperation__img {
+        width: 100%;
+    }
+    .cooperation__item {
+        padding: 22px 18px;
+    }
 }
 
 @media (max-width: 1095px) {
@@ -6159,7 +6166,29 @@ html {
         padding-left: 265px;
         padding-right: 16px;
     }
-    
+    .stages__slide {
+        flex-direction: column;
+        align-items: center;
+    }
+    .stages__slides {
+        min-height: auto;
+    }
+    .stages__controls {
+        position: relative;
+        top: auto;
+        bottom: 0;
+        margin-top: 50px;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+    }
+    .stages__slide.active {
+        position: relative;
+    }
+    .stages__content {
+        padding-bottom: 0;
+        padding-left: 0;
+    }
 }
 
 @media (max-width: 830px) {
@@ -7366,6 +7395,77 @@ html {
     .cases__images.two-image .cases__img:nth-of-type(2) {
         width: 71px;
         bottom: -41px;
+    }
+    .stages {
+        background: transparent;
+        padding-top: 82px;
+    }
+    .stages__text.one, .stages__text.two {
+        display: none;
+    }
+    .stages__img {
+        width: 100%;
+    }
+    .stages__sup-caption {
+        font-size: 12px;
+    }
+    .stages__caption {
+        font-size: 26px;
+        margin-bottom: 6px;
+    }
+    .stages__desc {
+        font-size: 14px;
+        line-height: 20px;
+    }
+    .stages__button.next {
+        width: 74px;
+        height: 74px;
+    }
+    .stages__image-wrap {
+        width: 51px;
+    }
+    .stages__button.prev {
+        margin-right: 39px;
+    }
+    .stages__controls {
+        margin-top: 25px;
+        margin-bottom: 46px;
+        padding-left: 0;
+    }
+    .stages__step {
+        font-size: 10px;
+    }
+    .cooperation__content {
+        flex-wrap: wrap;
+        gap: 14px;
+    }
+    .cooperation__item, .cooperation__list, .cooperation__item.big--item {
+        width: 100%;
+        gap: 14px;
+        justify-content: flex-start;
+    }
+    .cooperation__img {
+        width: 100%;
+        max-width: 437px;
+        margin-left: auto;
+        margin-right: auto;
+        display: block;
+        margin-top: 30px;
+    }
+    .cooperation__caption {
+        font-size: 18px;
+        margin-bottom: 6px;
+        line-height: 26px;
+    }
+    .cooperation__desc {
+        font-size: 14px;
+        line-height: 20px;
+    }
+    .cooperation__item {
+        padding: 22px 18px 40px;
+    }
+    .cooperation__title {
+        margin-bottom: 20px;
     }
 }
 

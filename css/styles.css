@@ -8780,6 +8780,12 @@ html {
     }
 }
 
+@media (max-width: 400px) {
+    .stages__step {
+        font-size: 8px;
+    }
+}
+
 @media (max-width: 370px) {
     .case-info__icon {
         height: 60px;

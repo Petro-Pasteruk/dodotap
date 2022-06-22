@@ -4066,6 +4066,10 @@ html {
     justify-content: center;
 }
 
+.business-assistance__wrapper--mobile {
+    display: none;
+}
+
 .business-assistance__wrapper:before {
     content: "";
     width: 400px;
